@@ -43,23 +43,7 @@
   
   
     <script>
-      function loadPreferredAppearance() {
-        if (localStorage.preferredAppearance === "dark" || (!("preferredAppearance" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
-      }
-      function setPreferredAppearance(scheme) {
-        if (scheme == "default") {
-          localStorage.removeItem("preferredAppearance");
-        } else {
-          localStorage.preferredAppearance = scheme;
-        }
-        loadPreferredAppearance();
-      }
-      loadPreferredAppearance();
-      window.matchMedia("(prefers-color-scheme: dark)").addListener(loadPreferredAppearance);
+      localStorage.removeItem("preferredAppearance");
     </script>
   
   
@@ -182,8 +166,8 @@
           <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
             <a
               class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href=""
-              title=""
+              href="/about-me/"
+              title="Welcome to the lair :wave:"
               >About me</a
             >
           </li>
@@ -231,11 +215,6 @@
     <section>
       
         
-          <h2 class="mt-12 text-2xl font-bold first:mt-8 text-neutral-700 dark:text-neutral-300">
-            2021
-          </h2>
-          <hr class="border-dotted border-neutral-400 w-36" />
-        
         
           <article>
   <h3 class="flex items-center mt-6 text-xl font-semibold">
@@ -262,9 +241,9 @@
 
   
   
-    
-  
 
+  
+    
   
 
   
@@ -277,8 +256,7 @@
   <div class="flex flex-row items-center">
     
     
-      <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
-<span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
+      <span>975 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -320,9 +298,9 @@
 
   
   
-    
-  
 
+  
+    
   
 
   
@@ -335,8 +313,7 @@
   <div class="flex flex-row items-center">
     
     
-      <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
-<span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
+      <span>187 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span>
     
 
     
@@ -378,9 +355,9 @@
 
   
   
-    
-  
 
+  
+    
   
 
   
@@ -393,8 +370,7 @@
   <div class="flex flex-row items-center">
     
     
-      <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
-<span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <span>216 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     

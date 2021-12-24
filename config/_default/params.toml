@@ -1,5 +1,5 @@
 colorScheme = "congo"
-darkMode = "auto"
+darkMode = "fire"
 darkToggle = false
 logo = "logo.png"
 description = "Linux & tech adventures"
@@ -10,23 +10,23 @@ robots = "index, follow"
   showRecent = false
 
 [article]
-  showDate = true
+  showDate = false
   dateFormat = "2.12.2006"
   showAuthor = true
-  showBreadcrumbs = true
-  showDraftLabel = true
+  showBreadcrumbs = false
+  showDraftLabel = false
   showEdit = true
   editURL = "https://github.com/dr460nf1r3/website"
   editAppendPath = true
   showHeadingAnchors = true
   showPagination = true
   showReadingTime = true
-  showWordCount = false
+  showWordCount = true
 
 [list]
   showBreadcrumbs = true
   showSummary = true
-  groupByYear = true
+  groupByYear = false
 
 [taxonomy]
   showTermCount = true
