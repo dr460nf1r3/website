@@ -20,13 +20,6 @@
     
   
     
-      <url>
-            <loc>https://dr460nf1r3.org/projects/firedragon/</loc>
-            <lastmod>2021-12-24T00:00:00+00:00</lastmod>
-          </url>
-    
-  
-    
   
     
   
@@ -60,17 +53,24 @@
   
     
       <url>
+            <loc>https://dr460nf1r3.org/projects/firedragon/</loc>
+            <lastmod>2021-12-24T00:00:00+00:00</lastmod>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://dr460nf1r3.org/</loc>
             <lastmod>2021-12-24T00:00:00+00:00</lastmod>
           </url>
     
   
     
-  
-    
       <url>
             <loc>https://dr460nf1r3.org/about-me/</loc>
           </url>
+    
+  
     
   
 </urlset>

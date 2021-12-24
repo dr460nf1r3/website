@@ -6,7 +6,7 @@
     <description>Recent content in aur on Dragons Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>Copy, _right?_ :thinking:</copyright>
+    <copyright>:copyright: 2021 by [dr460nf1r3](https://dr460nf1r3.org)</copyright>
     <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/aur/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chaotic-AUR</title>
@@ -14,7 +14,7 @@
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dr460nf1r3.org/projects/chaotic-aur/</guid>
-      <description>What is Chaotic-AUR?</description>
+      <description>What is Chaotic-AUR? 👀 # As Chaotic-AUR is the repository (kind of an appstore for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to provide another mirror for it.</description>
     </item>
     
   </channel>

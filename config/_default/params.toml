@@ -1,5 +1,5 @@
-colorScheme = "congo"
-darkMode = "fire"
+colorScheme = "fire"
+darkMode = "true"
 darkToggle = false
 logo = "logo.png"
 description = "Linux & tech adventures"
