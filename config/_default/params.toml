@@ -1,0 +1,36 @@
+colorScheme = "congo"
+darkMode = "auto"
+darkToggle = false
+logo = "logo.png"
+description = "Linux & tech adventures"
+# mainSections = ["section1", "section2"]
+# robots = ""
+
+[homepage]
+  layout = "profile"
+  showRecent = false
+
+[article]
+  showDate = true
+  dateFormat = "2.12.2006"
+  showAuthor = true
+  showBreadcrumbs = true
+  showDraftLabel = true
+  showEdit = false
+  editURL = "https://github.com/dr460nf1r3/website"
+  editAppendPath = true
+  showHeadingAnchors = true
+  showPagination = true
+  showReadingTime = true
+  showWordCount = false
+
+[list]
+  showBreadcrumbs = false
+  showSummary = false
+  groupByYear = true
+
+[taxonomy]
+  showTermCount = true
+
+[sitemap]
+  excludedKinds = ["taxonomy", "term"]
