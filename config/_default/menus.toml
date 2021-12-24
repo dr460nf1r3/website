@@ -1,19 +1,19 @@
 [[main]]
-  name = "Blog"
-  pageRef = "posts"
-  weight = 10
-
-[[main]]
-  name = "Projects"
+  name = "Projects & posts"
   pageRef = "projects"
-  weight = 20
+  weight = 10
 
 [[main]]
   name = "Garuda Linux"
   url = "https://garudalinux.org"
-  weight = 30
+  weight = 20
 
 [[main]]
   name = "Chaotic-AUR"
   url = "https://aur.chaotic.cx"
+  weight = 30
+
+[[main]]
+  name = "About me"
+  pageRef = "posts"
   weight = 40
