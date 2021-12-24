@@ -1,9 +1,11 @@
-<div id="page">
-  {{ partial "partials/home/page.html" . }}
-</div>
-<div id="profile" class="hidden h-full">
+<div id="profile">
   {{ partial "partials/home/profile.html" . }}
 </div>
+
+<div id="page" class="hidden h-full" >
+  {{ partial "partials/home/page.html" . }}
+</div>
+
 
 <script type="text/javascript">
   function switchLayout() {

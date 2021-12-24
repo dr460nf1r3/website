@@ -3,11 +3,10 @@ darkMode = "auto"
 darkToggle = false
 logo = "logo.png"
 description = "Linux & tech adventures"
-# mainSections = ["section1", "section2"]
-# robots = ""
+robots = "index, follow"
 
 [homepage]
-  layout = "profile"
+  layout = "custom"
   showRecent = false
 
 [article]
@@ -16,7 +15,7 @@ description = "Linux & tech adventures"
   showAuthor = true
   showBreadcrumbs = true
   showDraftLabel = true
-  showEdit = false
+  showEdit = true
   editURL = "https://github.com/dr460nf1r3/website"
   editAppendPath = true
   showHeadingAnchors = true
@@ -25,8 +24,8 @@ description = "Linux & tech adventures"
   showWordCount = false
 
 [list]
-  showBreadcrumbs = false
-  showSummary = false
+  showBreadcrumbs = true
+  showSummary = true
   groupByYear = true
 
 [taxonomy]

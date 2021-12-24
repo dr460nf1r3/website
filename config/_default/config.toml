@@ -1,13 +1,9 @@
-# -- Site Configuration --
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/getting-started/
-
 baseURL = "https://dr460nf1r3.org/"
 languageCode = "en"
 defaultContentLanguage = "en"
 theme = "congo"
 title = "Dragons Lair"
-copyright = "Copy, _right?_ :thinking_face:"
+copyright = "Copy, _right?_ :thinking:"
 enableEmoji = true
 enableRobotsTXT = true
 summaryLength = 0
