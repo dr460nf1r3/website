@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to the lair :wave: on Dragons Lair</title>
-    <link>https://dr460nf1r3.org/</link>
-    <description>Recent content in Welcome to the lair :wave: on Dragons Lair</description>
+    <title>privacy on Dragons Lair</title>
+    <link>https://dr460nf1r3.org/tags/privacy/</link>
+    <description>Recent content in privacy on Dragons Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking:</copyright>
-    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Chaotic-AUR</title>
-      <link>https://dr460nf1r3.org/projects/chaotic-aur/</link>
-      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://dr460nf1r3.org/projects/chaotic-aur/</guid>
-      <description>What is Chaotic-AUR?</description>
-    </item>
-    
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/privacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>FireDragon</title>
       <link>https://dr460nf1r3.org/projects/firedragon/</link>

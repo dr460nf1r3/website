@@ -10,10 +10,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title> &middot; Dragons Lair</title>
-    <meta name="title" content=" &middot; Dragons Lair" />
+  <title>FireDragon &middot; Dragons Lair</title>
+    <meta name="title" content="FireDragon &middot; Dragons Lair" />
   
-  <meta name="description" content="Linux &amp; tech adventures" />
+  <meta name="description" content="A short FireDragon history lesson" />
   
   
     <meta name="robots" content="index, follow" />
@@ -74,17 +74,17 @@
   
   
   
-  <meta property="og:title" content="" />
-<meta property="og:description" content="" />
+  <meta property="og:title" content="FireDragon" />
+<meta property="og:description" content="A short FireDragon history lesson" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://dr460nf1r3.org/projects/firedragon/" /><meta property="article:section" content="projects" />
-
-
+<meta property="article:published_time" content="2021-12-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-12-24T00:00:00+00:00" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="FireDragon"/>
+<meta name="twitter:description" content="A short FireDragon history lesson"/>
 
   
   <script type="application/ld+json">
@@ -92,9 +92,9 @@
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "articleSection": "Projects",
-    "name": "",
-    "headline": "",
-    "description": "",
+    "name": "FireDragon",
+    "headline": "FireDragon",
+    "description": "A short FireDragon history lesson",
     "inLanguage": "en",
     "author" : {
       "@type": "Person",
@@ -105,13 +105,13 @@
       "name": "Nico Jensch"
     },
     "copyrightHolder": "Nico Jensch",
-    
-    
-    
-    
+    "copyrightYear": "2021",
+    "dateCreated": "2021-12-24T00:00:00\u002b00:00",
+    "datePublished": "2021-12-24T00:00:00\u002b00:00",
+    "dateModified": "2021-12-24T00:00:00\u002b00:00",
     "url" : "https:\/\/dr460nf1r3.org\/projects\/firedragon\/",
-    "wordCount": "0",
-    "keywords": []
+    "wordCount": "187",
+    "keywords": ["firedragon","browser","privacy","foss","dr460nized",]
   }
   </script>
 
@@ -183,18 +183,9 @@
           <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
             <a
               class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
-              href=""
-              title=""
-              >Blog</a
-            >
-          </li>
-        
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
-            <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
               href="/projects/"
               title="Projects"
-              >Projects</a
+              >Projects &amp; posts</a
             >
           </li>
         
@@ -213,6 +204,15 @@
               href="https://aur.chaotic.cx"
               title=""
               >Chaotic-AUR</a
+            >
+          </li>
+        
+          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+            <a
+              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              href=""
+              title=""
+              >About me</a
             >
           </li>
         
@@ -253,7 +253,7 @@
     <a
       class="hover:underline hover:underline-neutral-300 dark:underline-neutral-600"
       href="/projects/firedragon/"
-      ></a
+      >FireDragon</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -262,7 +262,7 @@
 
       
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        
+        FireDragon
       </h1>
       <div class="mt-8 mb-12 text-base text-neutral-500 dark:text-neutral-400">
         
@@ -286,6 +286,8 @@
   
 
   
+    
+  
 
   
     
@@ -295,8 +297,8 @@
   <div class="flex flex-row items-center">
     
     
-      <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1.11.0001</time>
-<span class="px-2 text-primary-500">&middot;</span>
+      <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
+<span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 min</span><span class="px-2 text-primary-500">&middot;</span>
 
 
   
@@ -331,7 +333,12 @@
       </div>
     </header>
     <section class="prose dark:prose-light">
-      
+      <h2 id="the-firedragon-browser">The FireDragon browser <a class="heading-anchor" href="#the-firedragon-browser" aria-label="Anchor">#</a></h2>
+<h3 id="initial-idea">Initial idea <a class="heading-anchor" href="#initial-idea" aria-label="Anchor">#</a></h3>
+<p>Recently we got to know that Mozilla no longer supports a free internet. Their browser, Firefox, collects a lot of telemetry by default. Librewolf is a community maintained project which cuts the privacy compromising parts out of Firefox and provides a hardened browser config. That means no about:config tweaking is needed, everything works just after opening the browser for the first time. It has one very big drawback though: no Nightly (alpha) are builds available - just stable releases.</p>
+<h3 id="the-creation">The creation <a class="heading-anchor" href="#the-creation" aria-label="Anchor">#</a></h3>
+<p>When I found out that a talented Maintainer brought a working PKGBUILD to AUR which is able to build from bleeding edge branches I was definitely interested! Even better, with some modifications I was able to build a custom branded version with my own settings called &ldquo;FireDragon&rdquo;. This fork ships sane defaults which let many things which are broken in Librewolf work out of the box, ships with the Searx search engine, some handpicked patches from Gentoo, Ubuntu &amp; Debian and some useful addons. Of course it is also available at Chaotic-AUR, built daily from the latest source!</p>
+
     </section>
     <footer class="pt-8">
       
@@ -482,11 +489,11 @@
               <span class="mr-3 article-pagination-direction">&larr;</span>
               <span class="flex flex-col">
                 <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  ></span
+                  >Chaotic-AUR</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1.11.0001</time>
+                    <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
 
                   
                 </span>
@@ -499,11 +506,11 @@
             <a class="flex text-right" href="/projects/garuda/">
               <span class="flex flex-col">
                 <span class="article-pagination-title mt-[0.1rem] leading-6"
-                  ></span
+                  >Garuda Linux</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="0001-01-01 00:00:00 &#43;0000 UTC">1.11.0001</time>
+                    <time datetime="2021-12-24 00:00:00 &#43;0000 UTC">24.1224.2021</time>
 
                   
                 </span>
