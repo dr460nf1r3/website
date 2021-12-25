@@ -9,7 +9,7 @@ I'm a Linux and technology enthusiast from Germany who likes maintaining servers
 ## My hardware
 My personal laptop is a Lenovo Slim 7, a great 14" device with a lot of power thanks to its AMD Ryzen 7 4800u. Even though this this is a low power CPU, it relatively quick and provides amazing battery life. You might have guessed it already - its operating system is Garuda dr460nized! :dragon:
 
-{{< figure src="desktop.png" >}}
+{{< figure src="desktop.webp" >}}
 
 ## What is inside of this server?
 This server most likely the most powerful one I ever had the pleasure to be admin of. Its a root server rented at [Netcup](https://netcup.eu) with 10 dedicated cores of an AMD Epyc 7702 processor and 64GB RAM running [Arch Linux](https://archlinux.org).

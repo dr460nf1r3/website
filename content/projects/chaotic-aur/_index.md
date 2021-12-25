@@ -22,9 +22,9 @@ As Chaotic-AUR is the repository (kind of an appstore for Linux distributions) o
 Chaotic-AUR provides everyday applications such as Spotify, GitHub Desktop, Visual Studio Code Insiders, a variety of [Linux-tkg kernels](https://github.com/Frogging-Family/linux-tkg) and a lot of other software which is not available in the official Arch repositories. The loss of the 380GB RAM main cluster in December 2020 made changes necessary and our Garuda builder became one of new three clusters to build individual packages for Chaotic-AUR. About 2630 of the previous over 4000 packages have been recovered until now and building packages is automated again! :happy:
 </div>
 
-{{< figure src="chaotic-compilation.png" >}}
+{{< figure src="chaotic-compilation.webp" >}}
 
 ## How does this server help Chaotic-AUR? :chart_with_upwards_trend:
 This server is also a Chaotic-AUR builder to help with compiling all those great packages which couldn't have been updated daily otherwise! Currently it builds the entire KDE/Plasma -git stack (bleeding edge, daily compiled packages), most of the stuff I use personally & some of the requested packages daily. Have a look [here](https://github.com/chaotic-aur/packages/tree/main/dragon-cluster) to have some insight :blush:
 
-{{< figure src="lair-neofetch.png" >}}
+{{< figure src="lair-neofetch.webp" >}}
