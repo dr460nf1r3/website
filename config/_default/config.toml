@@ -6,7 +6,7 @@ title = "Dragons Lair"
 copyright = ":copyright: 2021 by [dr460nf1r3](https://dr460nf1r3.org)"
 enableEmoji = true
 enableRobotsTXT = true
-summaryLength = 10
+summaryLength = 30
 custom_css = ["css/custom.css"]
 
 [author]
@@ -19,5 +19,4 @@ custom_css = ["css/custom.css"]
     { github = "https://github.com/dr460nf1r3" },
     { gitlab = "https://gitlab.com/dr460nf1r3" },
     { telegram = "https://t.me/dr460nf1r3" },
-    { twitter = "https://twitter.com/dr460nf1r3" },
   ]

@@ -11,10 +11,13 @@ tags: ["garuda", "linux", "privacy", "foss", "open source", "dr460nized"]
 
 Since about 2 years I have been using Linux. Since the beginning, I loved the way things work on Linux, the simplicity and customizability - something unheard of in among windows users. A long time of these two years I spent distro hopping, searching for the optimal Linux distribution for my requirements. For those of you who do know the term "distro hopping" - a very good explanation can be found here! As a result I have tried countless Distributions like with Ubuntu, Fedora, Arch and Gentoo in all kinds of forms. After a while I sticked with Gentoo - the customisability was just too great, turning features on and off at compile time with use flags? Hell yes. But there were two major drawbacks: The compile times on a dual core CPU T440p were just too much (imagine Chromium taking 18 hours to compile) and to get all required software a lot of so called "overlays" had to be used which made the system feel very messy to me at some point - a solution had to be found.
 
+{{< youtube id="ojC7NXE69z4" title="Is Distrohopping a dangerous addiction?" >}}
+
 ## Early days of Garuda Linux :baby:
 
 During these days I found myself trying out Garuda Linux. It emerged out of the custom Manjaro build called "Manjarowish" which implemeted a lot of great things such as performance enhancements or OpenSUSE style BTRFS with automated snapshots before each update by default. Garuda takes this to another level running on top of pure Arch which means always the latest and greatest packges! Eventually there was no maintainer for the GNOME edition at the time I was this edition for a short time - being completely new to this kind of business I decided to step in and maintain it (at this time Garuda was still rather unknown - the Telegram group had about 20 members back then). Since then many things changed - a lot of new ideas were implemented, existing tools improved, the team welcomed new members and appearently people like it so far since feedback has been mostly pretty overwhelming! 
 
+{{< figure src="early-gnome.png" title="Yes, thats how Garuda GNOME looked in early 2020" >}}
 
 ## Expansion and new ressources :children_crossing:
 

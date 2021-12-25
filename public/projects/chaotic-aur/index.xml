@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Chaotic-AUR on Dragons Lair</title>
+    <link>https://dr460nf1r3.org/projects/chaotic-aur/</link>
+    <description>Recent content in Chaotic-AUR on Dragons Lair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>:copyright: 2021 by [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/projects/chaotic-aur/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

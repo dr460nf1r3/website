@@ -2,11 +2,11 @@ colorScheme = "fire"
 darkMode = "true"
 darkToggle = false
 logo = "logo.png"
-description = "Linux & tech adventures"
+description = "Be aware! Linux, tech adventures & dragons inside"
 robots = "index, follow"
 
 [homepage]
-  layout = "custom"
+  layout = "profile"
   showRecent = false
 
 [article]
@@ -24,7 +24,7 @@ robots = "index, follow"
   showWordCount = true
 
 [list]
-  showBreadcrumbs = true
+  showBreadcrumbs = false
   showSummary = true
   groupByYear = false
 
