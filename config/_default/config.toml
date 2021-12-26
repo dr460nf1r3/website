@@ -1,21 +1,27 @@
 baseURL = "https://dr460nf1r3.org/"
-languageCode = "en"
+copyright = ":copyright: 2021 [dr460nf1r3](https://dr460nf1r3.org)"
 defaultContentLanguage = "en"
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+languageCode = "en"
+summaryLength = 50
 theme = "congo"
 title = "Dragons Lair"
-copyright = ":copyright: 2021 [dr460nf1r3](https://dr460nf1r3.org)"
-enableEmoji = true
-enableRobotsTXT = true
-summaryLength = 50
 
 [author]
-  name = "Nico Jensch"
-  image = "author.png"
   bio = "Just an average FOSS enthusiast & distro maintainer"
+  image = "author.png"
   links = [
     { email = "mailto:contact@dr460nf1r3.org" },
-    { link = "https://dr460nf1r3.org" },
     { github = "https://github.com/dr460nf1r3" },
     { gitlab = "https://gitlab.com/dr460nf1r3" },
+    { link = "https://dr460nf1r3.org" },
     { telegram = "https://t.me/dr460nf1r3" },
   ]
+  name = "Nico Jensch"
+
+[imaging]
+disableDate = true
+disableLatLong = true
+hint = "picture"

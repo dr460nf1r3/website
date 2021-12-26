@@ -1,32 +1,33 @@
 colorScheme = "congo"
 darkMode = "true"
-darkToggle = false
-logo = "logo.png"
+darkToggle = true
 description = "Be aware! Linux, tech adventures & dragons inside"
+logo = "logo.png"
 robots = "index, follow"
 
 [homepage]
   layout = "profile"
+  mainSections = ["posts", "projects"]
   showRecent = false
 
 [article]
-  showDate = false
   dateFormat = "2.12.2006"
+  editAppendPath = false
+  editURL = "https://github.com/dr460nf1r3/website/content"
   showAuthor = true
   showBreadcrumbs = false
+  showDate = false
   showDraftLabel = false
   showEdit = true
-  editURL = "https://github.com/dr460nf1r3/website/content"
-  editAppendPath = false
   showHeadingAnchors = true
-  showPagination = true
+  showPagination = false
   showReadingTime = true
   showWordCount = true
 
 [list]
+  groupByYear = false
   showBreadcrumbs = false
   showSummary = true
-  groupByYear = false
 
 [taxonomy]
   showTermCount = true

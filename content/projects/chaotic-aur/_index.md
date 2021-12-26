@@ -4,6 +4,7 @@ date: 2021-12-24
 draft: false
 description: "What is going on at Chaotic-AUR?"
 slug: "chaotic-aur"
+summary: "As Chaotic-AUR is the repository (kind of an appstore for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to help with maintenance and provide another mirror for it. Especially a massive increase of web traffic on the main server made this necessary!"
 tags: ["chaotic-aur", "repository", "arch", "garuda-linux", "aur"]
 ---
 
