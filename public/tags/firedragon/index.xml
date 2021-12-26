@@ -6,7 +6,7 @@
     <description>Recent content in firedragon on Dragons Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>:copyright: 2021 by [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <copyright>:copyright: 2021 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
     <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/firedragon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The FireDragon browser</title>
@@ -14,7 +14,7 @@
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dr460nf1r3.org/projects/firedragon/</guid>
-      <description>Initial idea 🐺 # Recently we got to know that Mozilla no longer supports a free internet. Their browser, Firefox, collects a lot of telemetry by default. Since using Chromium based browsers is not really an alternative (There shouldn&amp;rsquo;t be a single browser engine dictating web standarts!</description>
+      <description>Initial idea 🐺 # Recently we got to know that Mozilla no longer supports a free internet. Their browser, Firefox, collects a lot of telemetry by default. Since using Chromium based browsers is not really an alternative (There shouldn&amp;rsquo;t be a single browser engine dictating web standarts! 👀) Librewolf is a community maintained project which removes the privacy compromising parts and provides an additionally hardened browser config.</description>
     </item>
     
   </channel>

@@ -3,16 +3,16 @@ languageCode = "en"
 defaultContentLanguage = "en"
 theme = "congo"
 title = "Dragons Lair"
-copyright = ":copyright: 2021 by [dr460nf1r3](https://dr460nf1r3.org)"
+copyright = ":copyright: 2021 [dr460nf1r3](https://dr460nf1r3.org)"
 enableEmoji = true
 enableRobotsTXT = true
-summaryLength = 30
+summaryLength = 50
 custom_css = ["css/custom.css"]
 
 [author]
   name = "Nico Jensch"
   image = "author.png"
-  bio = "Just your average FOSS enthusiast & distro maintainer"
+  bio = "Just an average FOSS enthusiast & distro maintainer"
   links = [
     { email = "mailto:contact@dr460nf1r3.org" },
     { link = "https://dr460nf1r3.org" },

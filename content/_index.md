@@ -11,21 +11,35 @@ This website serves as personal blog and will be dealing with Linux and FOSS pro
 
 Since a few years, I have found a deep passion for open source and Linux. As I kept learning about the importance of FOSS ecosystems, I quickly got interested in selfhosting open source alternatives and contributing to a few projects myself. Thats also how I got involved in the development of [Garuda Linux](https://garudalinux.org).
 
-## Some of the projects I maintain or contribute to:
-### [Garuda Linux]({{< ref "projects/garuda" >}})
 
-[Garuda Linux](https://garudalinux.org) is an Arch based Linux distrbution which is both beautiful and easy to use. I'm mostly maintaining the infrastructure and a few editions. You can read more about it [here]({{< ref "projects/garuda" >}}).
+<br>
+<center>
+ <h2> Some of the projects I maintain or contribute to: </h2>
+</center>
+
+
+<center>
+ <h3> Garuda Linux </h3>
+</center>
+
+[Garuda Linux](https://garudalinux.org) is an Arch based Linux distrbution which is both beautiful and easy to use. I'm mostly maintaining the infrastructure and a few editions. You can read more about it [here]({{< ref "projects/garuda" >}}). :eagle:
 
 {{< figure src="dr460nized.webp" >}}
 
-### [Chaotic-AUR]({{< ref "projects/chaotic-aur" >}})
 
-[Chaotic-AUR](https://aur.chaotic.cx) is an Arch user repository which provides binary builds for roughly 3k packages, most of them being built hourly straight from [AUR](https://aur.archlinux.org). As main maintainer, I'm in charge of handling the repository and coordinating work. 
+<center>
+ <h3> Chaotic-AUR </h3>
+</center>
+
+[Chaotic-AUR](https://aur.chaotic.cx) is an Arch user repository which provides binary builds for roughly 3k packages, most of them being built hourly straight from [AUR](https://aur.archlinux.org). As main maintainer, I'm in charge of handling the repository and coordinating work. Have a look at [this page]({{< ref "projects/chaotic-aur" >}}) to find out more! :grin:
 
 {{< figure src="chaotic-aur.webp" >}}
 
-### [FireDragon]({{< ref "projects/firedragon" >}})
 
-[FireDragon](https://github.com/dr460nf1r3/firedragon-browser) is a Librewolf fork which focuses on providing a smoother user experience while keeping the important privacy tweaks. It also integrates quite well with some of our selfhosted services such as [searX](https://searx.garudalinux.org).
+<center>
+ <h3> FireDragon </h3>
+</center>
+
+[FireDragon](https://github.com/dr460nf1r3/firedragon-browser) is a Librewolf fork which focuses on providing a smoother user experience while keeping the important privacy tweaks. It also integrates quite well with some of our selfhosted services such as [searX](https://searx.garudalinux.org). Wanna know [more]({{< ref "projects/garuda" >}})  about it? :yum:
 
 {{< figure src="firedragon.webp" >}}
