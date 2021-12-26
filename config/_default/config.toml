@@ -7,7 +7,6 @@ copyright = ":copyright: 2021 [dr460nf1r3](https://dr460nf1r3.org)"
 enableEmoji = true
 enableRobotsTXT = true
 summaryLength = 50
-custom_css = ["css/custom.css"]
 
 [author]
   name = "Nico Jensch"
