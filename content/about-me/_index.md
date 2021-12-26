@@ -1,6 +1,7 @@
 ---
 title: "About me"
 description: "You want to know something about me?"
+featured_image: desktop.webp
 ---
 
 ## Who am I?

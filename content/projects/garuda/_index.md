@@ -4,6 +4,7 @@ date: 2021-12-24
 draft: false
 description: "Garuda Linux and me"
 slug: "garuda"
+featured_image: early-gnome.webp
 summary: "Since about 2 years I have been using Linux. Since the beginning, I loved the way things work on Linux, the simplicity and customizability - something unheard of in among windows users. A long time of these two years I spent distro hopping, searching for the optimal Linux distribution for my requirements. :eagle:"
 tags: ["garuda", "linux", "privacy", "foss", "open source", "dr460nized"]
 ---

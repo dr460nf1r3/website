@@ -2,7 +2,7 @@ colorScheme = "congo"
 darkMode = "true"
 darkToggle = true
 description = "Be aware! Linux, tech adventures & dragons inside"
-logo = "logo.png"
+logo = "logo.webp"
 robots = "index, follow"
 
 [homepage]
