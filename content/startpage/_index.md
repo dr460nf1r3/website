@@ -1,33 +1,31 @@
 ---
-#title: "Startpage"
-description: "My startpage for browsers"
+description: "My startpage for mobile browsers"
 featured_image: welcome.webp
+slug: "startpage"
 ---
 
 {{< figure src="welcome.webp" >}}
 
-## General links :book:
-- [searX](https://searx.garudalinux.org) - Private meta-search engine
-- [Whoogle](https://search.garudalinux.org) - Privacy aware frontend for the Google search engine
-- [GitLab](https://gitlab.com) - Source code management for Garuda Linux
-- [GitHub](https://github.com) - Source code management for Chaotic-AUR
+## Favorites :star:
+- [Whoogle](https://search.garudalinux.org) - Privacy aware Google search
+- [GitHub](https://github.com) - Git - the fox
+- [GitLab](https://gitlab.com) - Git - le Microsoft
+- [Garuda Forum](https://forum.garudalinux.org) - Linux community
 
 
-## Personal things
-- [The Cloud](https://cloud.dr460nf1r3.org) - Personal Nextcloud instance
+## My hosted stuff  :desktop:
+- [The Cloud](https://cloud.dr460nf1r3.org) - Nextcloud instance
 - [Invidious](https://yt.dr460nf1r3.org) - Invidious instance
 - [Nitter](https://twitter.dr460nf1r3.org) - Nitter instance
 - [Libreddit](https://reddit.dr460nf1r3.org) - Libreddit instance
--
 
 
-## Garuda Links :book:
-- [Forum](https://forum.garudalinux.org) - The official home of the Garuda community
-- [Cloud](https://cloud.garudalinux.org) - Nextcloud instance of Garuda Linux
-- [Wiki](https://wiki.garudalinux.org) - Read the Garuda Linux documentation
-- [Builds](https://builds.garudalinux.org) - Download images and view build logs
+## Project Links :eagle:
+- [Cloud](https://cloud.garudalinux.org) - The Garuda cloud
+- [Wiki](https://wiki.garudalinux.org) - Our mighty wiki
+- [Builds](https://builds.garudalinux.org) - Builds and logs
 
 
-## Development :book:
-- [Cloudflare](https://cloud.garudalinux.org) - DNS management & similar things
+## Development :wrench:
+- [Cloudflare](https://cloud.garudalinux.org) - DNS management
 - [AUR](https://aur.archlinux.org) - The Arch user repository
