@@ -8,8 +8,7 @@ slug: "startpage"
 
 ## Favorites :star:
 - [Whoogle](https://search.garudalinux.org) - Privacy aware Google search
-- [GitHub](https://github.com) - Git - the fox
-- [GitLab](https://gitlab.com) - Git - le Microsoft
+- [GitHub](https://github.com) / [GitLab](https://gitlab.com) - Managing projects
 - [Garuda Forum](https://forum.garudalinux.org) - Linux community
 
 
