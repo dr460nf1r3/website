@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="dark"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,7 +16,7 @@
   <title>The FireDragon browser &middot; Dragons Lair</title>
     <meta name="title" content="The FireDragon browser &middot; Dragons Lair" />
   
-  <meta name="description" content="A short FireDragon history lesson" />
+  <meta name="description" content="Be aware! Linux, tech adventures &amp; dragons inside" />
   
   
     <meta name="robots" content="index, follow" />
@@ -25,34 +28,29 @@
   
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/schemes/congo.min.b48d6ba061dc77186a2524fb8aac5ac3823b2679a9299ca60325abbccc9c1764c884715f0ba24b4e2776cb3814df4af1f4c854b87207cd5d4c7a254da9b55751.css"
-    integrity="sha512-tI1roGHcdxhqJST7iqxaw4I7JnmpKZymAyWrvMycF2TIhHFfC6JLTid2yzgU30rx9MhUuHIHzV1MeiVNqbVXUQ=="
-  />
   
   
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="/css/compiled/main.min.810ea9a5336b89bef8a72ead10f90e489f72a2716ada0c121c5aba8c499f32956b0eee84e7422826b4718c639027fb12d1a22fda7a7d4182de72da92d898f4b7.css"
-    integrity="sha512-gQ6ppTNrib74py6tEPkOSJ9yonFq2gwSHFq6jEmfMpVrDu6E50IoJrRxjGOQJ/sS0aIv2np9QYLectqS2Jj0tw=="
-  />
+  
   
   
     
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="/css/custom.min.43d4fc23b08ecb91f212315e84444ceb52fdf07a13e364b01d80b75e01f5ce5f55f8bcbbe98993805abbc090925154472fd2e066b5eab0ac3d3189bb8e887ebe.css"
-      integrity="sha512-Q9T8I7COy5HyEjFehERM61L98HoT42SwHYC3XgH1zl9V&#43;Ly76YmTgFq7wJCSUVRHL9LgZrXqsKw9MYm7joh&#43;vg=="
-    />
   
   
-    <script>
-      localStorage.removeItem("preferredAppearance");
-    </script>
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/css/main.bundle.min.5b4de3a35489f9ee8702d86889f990bc15a2ca6bd3a28e21c9090bb18e0618e6768e9dd00ca2f6cc61d3dce0b27155dc7848d078c7b195d42358db43be7fb113.css"
+    integrity="sha512-W03jo1SJ&#43;e6HAthoifmQvBWiymvToo4hyQkLsY4GGOZ2jp3QDKL2zGHT3OCycVXceEjQeMexldQjWNtDvn&#43;xEw=="
+  />
+  
+    
+    
+  
+  
+  
+  
+    
+    <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.4a2c1384c52f1702c7773004cf71d58cc5e75a4d9ae5acf0b3a3b225fbc255e5492713b60e0181646bdb0a44776e501d1edd28bb02d524a4c1d735d44d9cc51b.js" integrity="sha512-SiwThMUvFwLHdzAEz3HVjMXnWk2a5azws6OyJfvCVeVJJxO2DgGBZGvbCkR3blAdHt0ouwLVJKTB1zXUTZzFGw==" data-copy="Copy" data-copied="Copied"></script>
   
   
   
@@ -118,7 +116,16 @@
 </head>
 <body
     class="flex flex-col h-screen px-6 m-auto text-lg leading-7 bg-neutral text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral max-w-7xl"
-  ><header
+  >
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 dark:bg-neutral-600 focus:translate-y-0"
+        href="#main-content"
+        ><span class="font-bold ltr:pr-2 rtl:pl-2 text-primary-600 dark:text-primary-400"
+          >&darr;</span
+        >Skip to main content</a
+      >
+    </div><header
   class="flex justify-between py-6 font-semibold sm:items-center sm:py-10 text-neutral-900 dark:text-neutral"
 >
   
@@ -136,74 +143,125 @@
         </a>
       
     
+    
+
   </div>
   
   
     <nav>
       <ul class="flex flex-col list-none sm:flex-row">
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2"
               href="/projects/"
               title="My favorite projects"
               >Projects &amp; posts</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2"
               href="https://garudalinux.org"
               title=""
               >Garuda Linux</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2"
               href="https://aur.chaotic.cx"
               title=""
               >Chaotic-AUR</a
             >
           </li>
         
-          <li class="mb-1 text-right sm:mb-0 sm:mr-7 sm:last:mr-0">
+          <li
+            class="mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0"
+          >
             <a
-              class="hover:underline hover:underline-primary-500 hover:underline-thickness-bold hover:underline-offset-small"
+              class="hover:underline hover:decoration-primary-500 hover:decoration-2 hover:underline-offset-2"
               href="/about-me/"
               title="About me"
               >About me</a
             >
           </li>
         
+        
       </ul>
     </nav>
   
 </header>
-<main class="flex-grow">
-  <header>
+<main id="main-content" class="relative">
   
-  <section class="prose dark:prose-light">
-    <h1 class="mb-3 text-4xl font-extrabold text-neutral-800">The FireDragon browser</h1>
-    <section><h3 id="initial-idea-">Initial idea 🐺 <a class="heading-anchor" href="#initial-idea-" aria-label="Anchor">#</a></h3>
+  <header>
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">The FireDragon browser</h1>
+  </header>
+  <section
+    class="flex flex-col max-w-full prose lg:flex-row dark:prose-invert mt-0"
+  >
+    
+    <div class="min-w-0 min-h-0 max-w-prose">
+      <h3 id="initial-idea-" class="relative group">Initial idea 🐺 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#initial-idea-" aria-label="Anchor">#</a></span></h3>
 <p>Recently we got to know that Mozilla no longer supports a free internet. Their browser, Firefox, collects a lot of telemetry by default. Since using Chromium based browsers is not really an alternative (There shouldn&rsquo;t be a single browser engine dictating web standarts! 👀), some people decided to step in and provide a better solution. <a href="https://librewolf.net">Librewolf</a> is a community maintained project which removes the privacy compromising parts and provides an additionally hardened browser config. That means no <code>about:config</code> tweaking is needed to get going - everything just works after opening the browser for the first time. It has a few drawbacks though: It does not integrate well into Garuda dr460nized and has too strict default settings for most people.</p>
 
   
-  <figure><img src="/projects/firedragon/firedragon.webp"/>
-  </figure>
+  
+  
+  
+  
+    <figure >
+      
+        <img
+          class="my-0 rounded-md"
+          srcset="
+          /projects/firedragon/firedragon_hu7d0675d18b5f995eddc184fcd62c8abf_19134_330x0_resize_q75_h2_box_2.webp 330w,
+          /projects/firedragon/firedragon_hu7d0675d18b5f995eddc184fcd62c8abf_19134_660x0_resize_q75_h2_box_2.webp 660w,
+          /projects/firedragon/firedragon_hu7d0675d18b5f995eddc184fcd62c8abf_19134_1024x0_resize_q75_h2_box_2.webp 1024w,
+          /projects/firedragon/firedragon_hu7d0675d18b5f995eddc184fcd62c8abf_19134_1320x0_resize_q75_h2_box_2.webp 2x"
+          src="/projects/firedragon/firedragon_hu7d0675d18b5f995eddc184fcd62c8abf_19134_660x0_resize_q75_h2_box_2.webp"
+          alt=""
+        />
+      
+      
+    </figure>
+  
 
-
-<h3 id="creating-an-alternative-">Creating an alternative 🐉 <a class="heading-anchor" href="#creating-an-alternative-" aria-label="Anchor">#</a></h3>
+<h3 id="creating-an-alternative-" class="relative group">Creating an alternative 🐉 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#creating-an-alternative-" aria-label="Anchor">#</a></span></h3>
 <p>When I found out that a talented <a href="https://github.com/vnepogodin">Maintainer</a> brought a PKGBUILD to <a href="https://aur.archlinux.org/packages/librewolf-hg">AUR</a> which is able to build Librewolf from Firefox' nightly branch I was definitely interested in using it! Even better, with some modifications I was able to build a custom branded version with my own settings called <em>FireDragon</em>. The initial idea was to create a fork of <code>librewolf-hg</code> however this quickly changed when the Garuda forum got interested in a stable version as well. This fork ships saner defaults to also include regular (not paranoid 😋) users of Garuda Linux in its audience and ships with the <a href="https://searx.garudalinux.org">searX search engine</a> by default, some handpicked patches from Gentoo, Ubuntu &amp; Debian and some useful addons. Of course FireDragon is available at <a href="https://dr460nf1r3.org/projects/chaotic-aur/">Chaotic-AUR</a> - the nightly <code>firedragon-hg</code> package is even built daily from the latest source!</p>
 
   
-  <figure><img src="/projects/firedragon/firedragon-sweet.webp"/>
-  </figure>
+  
+  
+  
+  
+    <figure >
+      
+        <img
+          class="my-0 rounded-md"
+          srcset="
+          /projects/firedragon/firedragon-sweet_hub3558252b92862a7d78f8a09b8cd7101_57720_330x0_resize_q75_h2_box_2.webp 330w,
+          /projects/firedragon/firedragon-sweet_hub3558252b92862a7d78f8a09b8cd7101_57720_660x0_resize_q75_h2_box_2.webp 660w,
+          /projects/firedragon/firedragon-sweet_hub3558252b92862a7d78f8a09b8cd7101_57720_1024x0_resize_q75_h2_box_2.webp 1024w,
+          /projects/firedragon/firedragon-sweet_hub3558252b92862a7d78f8a09b8cd7101_57720_1320x0_resize_q75_h2_box_2.webp 2x"
+          src="/projects/firedragon/firedragon-sweet_hub3558252b92862a7d78f8a09b8cd7101_57720_660x0_resize_q75_h2_box_2.webp"
+          alt=""
+        />
+      
+      
+    </figure>
+  
 
-
-<h3 id="notable-features-">Notable features 🔥 <a class="heading-anchor" href="#notable-features-" aria-label="Anchor">#</a></h3>
+<h3 id="notable-features-" class="relative group">Notable features 🔥 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#notable-features-" aria-label="Anchor">#</a></span></h3>
 <p>There are some features which I absolutely love about this browser:</p>
 <ul>
 <li>Appmenu support thanks to Ubuntu patches</li>
@@ -212,33 +270,50 @@
 <li>Uses the selfhosted syncserver of Garuda to sync the Mozilla account</li>
 <li>Uses the selfhosted Whoogle instance of Garuda as default search engine</li>
 </ul>
-</section>
-  </section>
-</header>
 
+    </div>
+  </section>
   
-    <section class="mt-10 prose dark:prose-light">
+    <section class="mt-10 prose dark:prose-invert">
       <p class="py-8 border-t">
         <em>There's no articles to list here yet.</em>
       </p>
     </section>
   
-</main><footer class="py-10">
+
+      
+        <div
+          class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]"
+        >
+          <a
+            href="#the-top"
+            class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
+      
+    </main>
+    <footer class="py-10">
   
   
   <div class="flex justify-between">
     <div>
       
       <p class="text-sm text-neutral-500 dark:text-neutral-400">
-          ©️ 2021-2022 <a href="https://dr460nf1r3.org">dr460nf1r3</a>
+          &copy;
+          2022
+          Nico Jensch
       </p>
       
       
-        <p class="text-xs text-neutral-400 dark:text-neutral-600">
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
           
           
-          Powered by <a class="hover:underline hover:underline-primary-400 hover:text-primary-500"
-            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:underline-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>
+          Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+            href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://git.io/hugo-congo" target="_blank" rel="noopener noreferrer">Congo</a>
         </p>
       
     </div>

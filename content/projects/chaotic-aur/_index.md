@@ -13,8 +13,6 @@ tags: ["chaotic-aur", "repository", "arch", "garuda-linux", "aur"]
 
 As Chaotic-AUR is the repository (kind of an appstore for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to provide another mirror for it. Especially a massive increase of web traffic on the main server made this necessary! The repo can be accessed at [mirrors.dr460nf1r3.org](https://mirrors.dr460nf1r3.org) and can be found in the [chaotic-mirrorlist](https://github.com/chaotic-aur/pkgbuild-chaotic-mirrorlist/blob/main/mirrorlist) package as well. :page_with_curl:
 
-![Chaotic-AUR](https://avatars.githubusercontent.com/u/66071775?s=400&u=99bc0536e7e77fe3e58839996600848f2d930ed5&v=4)
-
 
 ## What and how much packages does it provide? :package:
 
