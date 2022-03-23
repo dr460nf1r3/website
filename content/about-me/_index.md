@@ -10,7 +10,7 @@ I'm a Linux and technology enthusiast from Germany who likes maintaining servers
 
 
 ## Yes, music is also a big part of my life!
-I felt like dropping some goodness here :yum: Carnifex all the way! :skeleton:
+I felt like dropping some goodness here :yum: Carnifex all the way! 💀
 
 {{< youtube id="uWnIs1pf_8M" title="Carnifex - Slit Wrist Saviour" >}}
 
