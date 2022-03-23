@@ -5,12 +5,14 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en"
+outputs.home = ["HTML", "RSS", "JSON"]
 summaryLength = 50
 theme = "congo"
 title = "Dragons Lair"
 
 [author]
   bio = "Just an average FOSS enthusiast & distro maintainer"
+  headline = "Busy taming dragons.."
   image = "author.webp"
   links = [
     { email = "mailto:contact@dr460nf1r3.org" },

@@ -1,9 +1,13 @@
 colorScheme = "congo"
 darkMode = "true"
 darkToggle = true
+defaultAppearance = "dark"
 description = "Be aware! Linux, tech adventures & dragons inside"
+enableCodeCopy = true
+enableSearch = true
 logo = "logo.webp"
 robots = "index, follow"
+showAppearanceSwitcher = true
 
 [homepage]
   layout = "profile"
