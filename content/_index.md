@@ -12,12 +12,10 @@ This website serves as personal blog and will be dealing with Linux and FOSS pro
 
 Since a few years, I have found a deep passion for open source and Linux. As I kept learning about the importance of FOSS ecosystems, I quickly got interested in selfhosting open source alternatives and contributing to a few projects myself. Thats also how I got involved in the development of [Garuda Linux](https://garudalinux.org).
 
-
 <br>
 <center>
  <h2> Some of the projects I maintain or contribute to: </h2>
 </center>
-
 
 <center>
  <h3> Garuda Linux </h3>
@@ -27,7 +25,6 @@ Since a few years, I have found a deep passion for open source and Linux. As I k
 
 {{< figure src="dr460nized.webp" >}}
 
-
 <center>
  <h3> Chaotic-AUR </h3>
 </center>
@@ -36,11 +33,10 @@ Since a few years, I have found a deep passion for open source and Linux. As I k
 
 {{< figure src="chaotic-aur.webp" >}}
 
-
 <center>
  <h3> FireDragon </h3>
 </center>
 
-[FireDragon](https://github.com/dr460nf1r3/firedragon-browser) is a Librewolf fork which focuses on providing a smoother user experience while keeping the important privacy tweaks. It also integrates quite well with some of our selfhosted services such as [searX](https://searx.garudalinux.org). Wanna know [more]({{< ref "projects/garuda" >}})  about it? :yum:
+[FireDragon](https://github.com/dr460nf1r3/firedragon-browser) is a Librewolf fork which focuses on providing a smoother user experience while keeping the important privacy tweaks. It also integrates quite well with some of our selfhosted services such as [searX](https://searx.garudalinux.org). Wanna know [more]({{< ref "projects/garuda" >}}) about it? :yum:
 
 {{< figure src="firedragon.webp" >}}
