@@ -22,4 +22,4 @@ My personal laptop is a Lenovo Slim 7, a great 14" device with a lot of power th
 
 ## What is inside of this server?
 
-This server most likely the most powerful one I ever had the pleasure to be admin of. It is a root server rented at [Netcup](https://netcup.eu) with 10 dedicated cores of an AMD Epyc 7702 processor and 64GB RAM running [Arch Linux](https://archlinux.org) - generously sponsored by [SGS](https://github.com/sgse) :heart_eyes:
+This server most likely the most powerful one I ever had the pleasure to be admin of. It is a root server rented at [Netcup](https://netcup.eu) with 14 dedicated cores of an AMD Epyc 7702 processor and 64GB RAM running [Arch Linux](https://archlinux.org) - generously sponsored by [SGS](https://github.com/sgse) :heart_eyes:
