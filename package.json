@@ -5,7 +5,7 @@
     "shellcheck": "^1.1.0"
   },
   "scripts": {
-    "lint": "prettier --check -w content/",
+    "lint": "prettier --check content/",
     "prettify": "prettier --write ."
   }
 }

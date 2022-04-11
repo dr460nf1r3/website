@@ -26,29 +26,3 @@ jobs:
 
       - name: Run lint
         run: yarn run lint
-
-  build:
-    runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Install/Update dependencies
-        run: apt --yes install hugo 
-
-      - name: Build the website
-        run: ./build.sh
-
-      - name: push
-        uses: actions-x/commit@v4
-        with:
-          email: github@dr460nf1r3.org
-          name: GitHub Actions Autocommitter
-          message: Automatically updated via Actions
-          branch: main
-          files: content/ public/
-          repository: https://github.com/dr460nf1r3/website.git
-          token: ${{ secrets.MY_SECRET_TOKEN }}
-          force: true
