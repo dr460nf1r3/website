@@ -6,6 +6,6 @@
   },
   "scripts": {
     "lint": "prettier --check content/",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write content/"
   }
 }

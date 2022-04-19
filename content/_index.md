@@ -12,7 +12,9 @@ This website serves as personal blog and will be dealing with Linux and FOSS pro
 
 Since a few years, I have found a deep passion for open source and Linux. As I kept learning about the importance of FOSS ecosystems, I quickly got interested in selfhosting open source alternatives and contributing to a few projects myself. Thats also how I got involved in the development of [Garuda Linux](https://garudalinux.org).
 
+My most recent project was writing [Ansible roles]({{< ref "projects/ansible-infra" >}}) for the whole Garuda Linux and Chaotic-AUR infrastructure. I'm really happy with how it turned out! :blush:
 <br>
+
 <center>
  <h2> Some of the projects I maintain or contribute to: </h2>
 </center>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ansible roles for the infra! on Dragons Lair</title>
+    <link>https://dr460nf1r3.org/projects/ansible-infra/</link>
+    <description>Recent content in Ansible roles for the infra! on Dragons Lair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>:copyright: 2021-2022 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/projects/ansible-infra/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
