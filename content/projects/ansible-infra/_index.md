@@ -5,7 +5,7 @@ draft: false
 description: "How to automate infrastructure using Ansible"
 slug: "ansible"
 featured_image: ansible.webp
-summary: "Since about 2 years I have been using Linux. Since the beginning, I loved the way things work on Linux, the simplicity and customizability - something unheard of in among windows users. A long time of these two years I spent distro hopping, searching for the optimal Linux distribution for my requirements. :eagle:"
+summary: "As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:"
 tags: ["garuda", "linux", "ansible", "foss", "open source", "chaotic-aur"]
 ---
 
