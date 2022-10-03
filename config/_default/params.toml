@@ -7,7 +7,7 @@ enableCodeCopy = true
 enableSearch = true
 logo = "logo.webp"
 robots = "index, follow"
-showAppearanceSwitcher = true
+footer.showAppearanceSwitcher = true
 
 [homepage]
   layout = "profile"
