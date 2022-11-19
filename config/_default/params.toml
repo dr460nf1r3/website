@@ -5,7 +5,7 @@ defaultAppearance = "dark"
 description = "Be aware! Linux, tech adventures & dragons inside"
 enableCodeCopy = true
 enableSearch = true
-logo = "logo.webp"
+header.logo = "logo.webp"
 robots = "index, follow"
 footer.showAppearanceSwitcher = true
 
