@@ -45,8 +45,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.e7ebbe12c6f59ec9ea02e40c617dcf30031fb7ba446a37ecb7ecdccba7e4ce30719ababa8ec521783994b9f0575dc59fcb98603a0bbe5b7e4136b7ea467d75ab.css"
-    integrity="sha512-5&#43;u&#43;Esb1nsnqAuQMYX3PMAMft7pEajfst&#43;zcy6fkzjBxmrq6jsUheDmUufBXXcWfy5hgOgu&#43;W35BNrfqRn11qw=="
+    href="/css/main.bundle.min.0219e83939a78ff928e7c57aa05744ac6771039fa440f3910a5ad6a903fc013b15a04d072b947034f6acb31a7101d9150d79bb0b530e8c92f5a2b7cf0d3f0c52.css"
+    integrity="sha512-AhnoOTmnj/ko58V6oFdErGdxA5&#43;kQPORClrWqQP8ATsVoE0HK5RwNPassxpxAdkVDXm7C1MOjJL1orfPDT8MUg=="
   />
   
   
@@ -278,7 +278,11 @@
     
     <div class="min-w-0 min-h-0 max-w-prose grow">
       <h2 id="introduction" class="relative group">Introduction <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span></h2>
-<p>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time consuming, especially when you have to deal with a lot of servers - enter <a href="https://www.ansible.com/"   target="_blank">Ansible</a>! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. It is based on so called playbooks, roles and tasks. Once defined, it is really easy to deploy the defined settings to target machines. All it needs is adding a few lines to the <code>hosts</code> file and defining <code>host_vars</code> to let Ansible know what kind of tasks to execute.</p>
+<p>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time consuming, especially when you have to deal with a lot of servers - enter <a
+  href="https://www.ansible.com/"
+  
+  target="_blank" rel="noreferrer noopener"
+>Ansible</a>! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. It is based on so called playbooks, roles and tasks. Once defined, it is really easy to deploy the defined settings to target machines. All it needs is adding a few lines to the <code>hosts</code> file and defining <code>host_vars</code> to let Ansible know what kind of tasks to execute.</p>
 
   
   
@@ -315,7 +319,15 @@
 
 
 <h2 id="starting-out" class="relative group">Starting out <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#starting-out" aria-label="Anchor">#</a></span></h2>
-<p>As I didn&rsquo;t know much about Ansible before, I decided to study already existing playbooks in order to learn more about how it works. The <a href="https://github.com/archlinux/infrastructure"   target="_blank">Arch infrastructure repository</a> helped me a lot understanding how to setup the different roles needed. I began by writing a <a href="https://gitlab.com/garuda-linux/infrastructure/-/blob/main/ansible/roles/common/tasks/main.yml"   target="_blank">role</a> for all kind of common tasks like installing base packages, setting up services and installing a MOTD.</p>
+<p>As I didn&rsquo;t know much about Ansible before, I decided to study already existing playbooks in order to learn more about how it works. The <a
+  href="https://github.com/archlinux/infrastructure"
+  
+  target="_blank" rel="noreferrer noopener"
+>Arch infrastructure repository</a> helped me a lot understanding how to setup the different roles needed. I began by writing a <a
+  href="https://gitlab.com/garuda-linux/infrastructure/-/blob/main/ansible/roles/common/tasks/main.yml"
+  
+  target="_blank" rel="noreferrer noopener"
+>role</a> for all kind of common tasks like installing base packages, setting up services and installing a MOTD.</p>
 
   
   
@@ -349,11 +361,27 @@
 <h2 id="host_vars-and-conditionals-to-the-rescue" class="relative group">Host_vars and conditionals to the rescue <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#host_vars-and-conditionals-to-the-rescue" aria-label="Anchor">#</a></span></h2>
 <p>Since not every host needs to be configured the same way, <code>host_vars</code> provide a neat way to define what task to execute on which machine. I also added a few conditionals to the role to make sure that certain tasks are only executed if needed - eg. Chaotic-AUR GPG keys don&rsquo;t need to be fetched every time the playbook is executed. There was also one issue with our <code>docker-compose</code> configurations - as the repo was closed source previously, it contained a lot of sensible environment variables in those files. In order to make it open source, those variables needed to be replaced with Ansible variables. Thanks to the <code>template</code> feature of Ansible, it is quite easy to supply a template <code>docker-compose.yml.j2</code> (Jinja2 formatting) which then gets rendered into a proper <code>docker-compose.yml</code> file with the variables replaced when the playbook is executed. Also, <code>ansible-vault</code> is a great little tool that allows encrypting sensitive files and data easily - Ansible automatically decrypts the content when deploying changes.</p>
 <h2 id="automating-everything" class="relative group">Automating everything! <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#automating-everything" aria-label="Anchor">#</a></span></h2>
-<p>While writing the different roles, I had so much fun that I couldn&rsquo;t stop working on it until it was all automated. Ansible Galaxy also came in handy, as it provided an already existing playbook for basic hardening of Linux installations and SSH with the <a href="https://github.com/dev-sec/ansible-collection-hardening"   target="_blank">devsec.hardening</a> collection. Meanwhile, I also rewrote our existing Nginx configurations to better fit our needs. Thinking about how I used <a href="https://github.com/NginxProxyManager/nginx-proxy-manager"   target="_blank">Nginx Proxy Manager</a> to handle web server needs not too long ago, I&rsquo;m somewhat happy I finally learned how to do it properly. It just provides so much more flexibility conerning configurations and setup. While NPM worked fine for the time being, it feels really good to be able write own Nginx configurations!</p>
+<p>While writing the different roles, I had so much fun that I couldn&rsquo;t stop working on it until it was all automated. Ansible Galaxy also came in handy, as it provided an already existing playbook for basic hardening of Linux installations and SSH with the <a
+  href="https://github.com/dev-sec/ansible-collection-hardening"
+  
+  target="_blank" rel="noreferrer noopener"
+>devsec.hardening</a> collection. Meanwhile, I also rewrote our existing Nginx configurations to better fit our needs. Thinking about how I used <a
+  href="https://github.com/NginxProxyManager/nginx-proxy-manager"
+  
+  target="_blank" rel="noreferrer noopener"
+>Nginx Proxy Manager</a> to handle web server needs not too long ago, I&rsquo;m somewhat happy I finally learned how to do it properly. It just provides so much more flexibility conerning configurations and setup. While NPM worked fine for the time being, it feels really good to be able write own Nginx configurations!</p>
 <h2 id="chaotic-aur-cluster-bootstrap" class="relative group">Chaotic-AUR cluster bootstrap? <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#chaotic-aur-cluster-bootstrap" aria-label="Anchor">#</a></span></h2>
-<p>Well, since I&rsquo;m also operating Chaotic-AUR, it was natural to also include it in the process of automating stuff. After a long trial and error session, the <code>chaotic_aur</code> role is now available on Chaotic&rsquo;s <a href="https://github.com/chaotic-aur/chaotic-aur-ansible"   target="_blank">Github organization</a>. It is also available in Garuda&rsquo;s infrastructure repository as git submodule and can be used to setup a whole cluster if provided with the correct <code>host_vars</code>.</p>
+<p>Well, since I&rsquo;m also operating Chaotic-AUR, it was natural to also include it in the process of automating stuff. After a long trial and error session, the <code>chaotic_aur</code> role is now available on Chaotic&rsquo;s <a
+  href="https://github.com/chaotic-aur/chaotic-aur-ansible"
+  
+  target="_blank" rel="noreferrer noopener"
+>Github organization</a>. It is also available in Garuda&rsquo;s infrastructure repository as git submodule and can be used to setup a whole cluster if provided with the correct <code>host_vars</code>.</p>
 <h2 id="throwing-in-some-gitlab-ci" class="relative group">Throwing in some GitLab CI <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#throwing-in-some-gitlab-ci" aria-label="Anchor">#</a></span></h2>
-<p>Automating and running playbooks on my personal machine was too boring, so I decided to utilize GitLab CI to <a href="https://gitlab.com/garuda-linux/infrastructure/-/jobs/2345629958"   target="_blank">trigger deployments</a> based on commit messages. Currently, the repo responds to <code>deploy &lt;playbook.yml&gt;</code> as well as <code>dry-run &lt;playbook.yml&gt;</code>. Obviously <code>deploy</code> deploys the supplied playbook while the latter initiates a dry run via <code>ansible-playbook &lt;playbook.yml&gt; --check</code>.</p>
+<p>Automating and running playbooks on my personal machine was too boring, so I decided to utilize GitLab CI to <a
+  href="https://gitlab.com/garuda-linux/infrastructure/-/jobs/2345629958"
+  
+  target="_blank" rel="noreferrer noopener"
+>trigger deployments</a> based on commit messages. Currently, the repo responds to <code>deploy &lt;playbook.yml&gt;</code> as well as <code>dry-run &lt;playbook.yml&gt;</code>. Obviously <code>deploy</code> deploys the supplied playbook while the latter initiates a dry run via <code>ansible-playbook &lt;playbook.yml&gt; --check</code>.</p>
 
   
   

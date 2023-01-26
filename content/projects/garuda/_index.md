@@ -32,6 +32,4 @@ After initial setup of the servers (which I got helped with luckily, the Proxmox
 
 ## The future :trophy:
 
-A lot of things happened since that time, I really need to start documenting things again! :thinking: There is a crazy detailed podcast dealing with all the things happening to Garuda though, I highly recommend watching it! :fire:
-
-{{< youtube id="2YoOIJ2p7tk" title="Garudians of the Galaxy" >}}
+A lot of things happened since that time, I really need to start documenting things again! Life sadly got super busy lately :thinking:
