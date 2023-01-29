@@ -14,7 +14,7 @@
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dr460nf1r3.org/projects/ansible-infra/</guid>
-      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:</description>
+      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time-consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:</description>
     </item>
     
   </channel>

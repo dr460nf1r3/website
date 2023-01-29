@@ -1,6 +1,6 @@
 ---
 title: "My favorite projects"
-description: "Here you can find all my favrite projects"
+description: "Here you can find all my favorite projects"
 ---
 
 {{< lead >}}

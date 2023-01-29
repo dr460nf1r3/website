@@ -14,7 +14,7 @@
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       
       <guid>https://dr460nf1r3.org/projects/ansible-infra/</guid>
-      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:</description>
+      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time-consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:</description>
     </item>
     
     <item>
@@ -23,7 +23,7 @@
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://dr460nf1r3.org/projects/chaotic-aur/</guid>
-      <description>As Chaotic-AUR is the repository (kind of an appstore for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to help with maintenance and provide another mirror for it. Especially a massive increase of web traffic on the main server made this necessary!</description>
+      <description>As Chaotic-AUR is the repository (kind of an app store for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to help with maintenance and provide another mirror for it. Especially a massive increase of web traffic on the main server made this necessary!</description>
     </item>
     
   </channel>

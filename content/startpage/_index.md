@@ -1,5 +1,5 @@
 ---
-description: "My startpage for mobile browsers"
+description: "My start page for mobile browsers"
 featured_image: welcome.webp
 slug: "startpage"
 ---
@@ -7,7 +7,7 @@ slug: "startpage"
 ## Favorites :star:
 
 - [Searxng](https://searx.dr460nf1r3.org) - Metasearch engine
-- [Whoogle](https://search.dr460nf1r3.org) - Privacy friendly Google
+- [Whoogle](https://search.dr460nf1r3.org) - Privacy-friendly Google
 - [GitHub](https://github.com) / [GitLab](https://gitlab.com) - Managing projects
 - [Garuda Forum](https://forum.garudalinux.org) - Linux community
 
