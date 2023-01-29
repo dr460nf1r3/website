@@ -6,8 +6,10 @@ description = "Be aware! Linux, tech adventures & dragons inside"
 enableCodeCopy = true
 enableSearch = true
 header.logo = "logo.webp"
+header.showTitle = false
 robots = "index, follow"
 footer.showAppearanceSwitcher = true
+footer.showThemeAttribution = false
 
 [homepage]
   layout = "profile"
