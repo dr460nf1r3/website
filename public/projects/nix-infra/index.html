@@ -70,7 +70,7 @@
   <meta
     name="description"
     content="
-      Garuda Linux and me
+      The new NixOS infrastructure
     "
   />
   
@@ -78,8 +78,8 @@
     <meta name="robots" content="index, follow" />
   
   
-  <link rel="canonical" href="https://dr460nf1r3.org/projects/garuda/" />
-  <link rel="alternate" type="application/rss+xml" href="/projects/garuda/index.xml" title="Dragons Lair" />
+  <link rel="canonical" href="https://dr460nf1r3.org/projects/nix-infra/" />
+  <link rel="alternate" type="application/rss+xml" href="/projects/nix-infra/index.xml" title="Dragons Lair" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -94,13 +94,13 @@
   
   
   <meta property="og:title" content="Garuda Linux" />
-<meta property="og:description" content="Garuda Linux and me" />
+<meta property="og:description" content="The new NixOS infrastructure" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://dr460nf1r3.org/projects/garuda/" />
+<meta property="og:url" content="https://dr460nf1r3.org/projects/nix-infra/" />
 
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Garuda Linux"/>
-<meta name="twitter:description" content="Garuda Linux and me"/>
+<meta name="twitter:description" content="The new NixOS infrastructure"/>
 
   
   
@@ -267,53 +267,38 @@
   >
     
     <div class="min-w-0 min-h-0 max-w-prose grow">
-      <h2 id="the-beginning-of-the-journey-" class="relative group">The beginning of the journey 🚶‍♂️ <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-beginning-of-the-journey-" aria-label="Anchor">#</a></span></h2><p>For about 2 years I have been using Linux. Since the beginning, I loved the way things work on Linux, the simplicity and customizability - something unheard of among windows users. For a long time of these two years, I spent distro hopping, searching for the optimal Linux distribution for my requirements. For those of you who do know the term &ldquo;distro hopping&rdquo; - a very good explanation can be found here! As a result, I have tried countless Distributions like Ubuntu, Fedora, Arch and Gentoo in all kinds of forms. After a while I stuck with Gentoo - the customizability was just too great, turning features on and off at compile time with use flags? Hell yes. But there were two major drawbacks: The compile times on a dual-core CPU T440p were just too much (imagine Chromium taking 18 hours to compile) and to get all required software a lot of so-called &ldquo;overlays&rdquo; had to be used which made the system feel very messy to me at some point - a solution had to be found.</p>
+      <h1 id="the-recent-server-migrations" class="relative group">The recent server migrations <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-recent-server-migrations" aria-label="Anchor">#</a></span></h1><h2 id="first-of-all-" class="relative group">First of all 👇 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#first-of-all-" aria-label="Anchor">#</a></span></h2><p>Since people asked for a more detailed explanation and also for something like a dev blog, I figured
+I&rsquo;d write down some of my thoughts and observations about the recent migration.</p>
+<h2 id="why-did-we-do-this-" class="relative group">Why did we do this? 👀 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#why-did-we-do-this-" aria-label="Anchor">#</a></span></h2><p>The Garuda infra has historically always been developing over time. Starting out with pure Docker-based setups, we quickly figured it would be beneficial to have a tool to manage configurations with. After TNE came up with Ansible, we set up our infra playbooks to manage the Arch-based servers. All of this was fine, and upgrading and managing, as well as saving the state to git repositories were quite significant advantages over manual server management.</p>
+<p>Time passes and we discovered NixOS as server OS. Now why choose another OS for the job? It&rsquo;s simple, managing NixOS systems is even better than using Ansible due to its declarative nature (declarative = define it, tool executes it, imperative = entering commands to achieve settings). Not only would you define a system state and apply it, but changes would also be reverted in case of removing a part of a configuration - something Ansible does not do, it just applies the defined state. We fell in love with NixOS and the possibilities it provides. Bootstrapping an entire system including its configs is pretty much a matter of downloading the git repository with the configurations and running <code>nixos-install</code>.</p>
+<p>So, we were running NixOS for infrastructure purposes for quite a while now. While we started out with a few VMs back in the day, we were having 1 dedicated server and 1 root server to host VMs / LXC containers for multiple purposes. They contained builders, web applications, the forum, and all the things we need to provide Garuda as is. As you can imagine, VMs are quite isolated from the host and use more resources than eg. having a Docker container. They take their own, fixed amount of RAM from the host and use the CPU to emulate the interfaces and devices. LXC containers on the other hand were more lightweight, as they share resources with each other and the host.</p>
+<p>Fast forward to about a month ago - the contract for the root server is about to expire and it&rsquo;s obvious that we could get much more value for the same amount of money by upgrading the dedicated server and replacing the root server with it. TNE and I planned to move our &ldquo;host&rdquo; part of the server to NixOS for a while already and this was the perfect time to execute the plan - given I had a week of vacation to spend on this.</p>
+<h2 id="the-idea-" class="relative group">The idea? 🤔 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-idea-" aria-label="Anchor">#</a></span></h2><p>Now there were a lot of ideas and questions on how to solve specific problems. Resources should be used as efficiently as possible, while
+also containing all of our previous VMs/Containers. NixOS has a thing called <code>nixos-containers</code>, which are basically declarative (or imperative!)
+systemd-nspawn Containers running NixOS. They share the Nix store with the host (the Nix store being the thing making Nix Nix - all files, applications, and basically the whole operating system is located in this store, which are then being symlinked to the regular locations) and can be configured to be
+ephemeral, which means that the root filesystem is located in a temporary filesystem, which is being deleted on shutdown or restart. This means only locations or files we bind-mound from the host&rsquo;s filesystem into the containers would survive a restart of the container and we would always have a &ldquo;fresh&rdquo; system.
+So we only keep things we want to keep, automatically clear the rest on restarts and share a lot of common resources between the host &amp; containers while still having them isolated in some kind of way. It may be noticed that the goal here was not to achieve strict isolation - that would&rsquo;ve meant not being able to run Docker or our Chaotic builder inside those containers.</p>
+<h2 id="execution-" class="relative group">Execution 🔧 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#execution-" aria-label="Anchor">#</a></span></h2><p>The first days of working on this consisted of writing the required Nix expressions to provide our containers. We came up with a custom function that builds our containers just the way we want them. Since we started out of a container supposed to be building Chaotic-AUR packages, we hit the first obstacle. The problem consisted of needing to run systemd-nspawn inside systemd-nspawn, since the toolbox utilizes it to build in a clean environment. This was eventually solved by mounting mounting <code>/sys/fs/groups</code> at the startup of the container. The next part of the implementation was getting Docker to run inside the nspawn containers. By default, we were not able to get Docker to run successfully - the solution consisted of providing additional capabilities and mounts to the container.</p>
+<p>We opted for running everything Docker-based in one container, and everything native in separate ones. That means, that we are running 10 different containers for different purposes. The forum also runs in Docker, but since it did Discourse expects the installation in /var/discourse rather than where our custom NixOS module puts it, we choose to put it into its own container, too. All of this is behind the <code>web-front</code> container, which uses Nginx as reverse proxy, adding in SSL. Different containers are also in place for different repositories we distribute via Chaotic-AUR (<code>chaotic-aur</code>, <code>garuda</code>, and <code>kde-git</code>).</p>
+<pre tabindex="0"><code>❯ machinectl
+MACHINE     CLASS     SERVICE        OS    VERSION ADDRESSES
+chaotic-kde container systemd-nspawn nixos 23.11   10.0.5.90…
+docker      container systemd-nspawn nixos 23.11   10.0.5.100…
+forum       container systemd-nspawn nixos 23.11   10.0.5.70…
+iso-runner  container systemd-nspawn nixos 23.11   10.0.5.40…
+mastodon    container systemd-nspawn nixos 23.11   10.0.5.80…
+meshcentral container systemd-nspawn nixos 23.11   10.0.5.60…
+postgres    container systemd-nspawn nixos 23.11   10.0.5.50…
+repo        container systemd-nspawn nixos 23.11   10.0.5.30…
+temeraire   container systemd-nspawn nixos 23.11   10.0.5.20…
+web-front   container systemd-nspawn nixos 23.11   10.0.5.10…
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/ojC7NXE69z4" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="Is Distrohopping a dangerous addiction?"></iframe>
-</div>
-
-<h2 id="early-days-of-garuda-linux-" class="relative group">Early days of Garuda Linux 👶 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#early-days-of-garuda-linux-" aria-label="Anchor">#</a></span></h2><p>During these days I found myself trying out Garuda Linux. It emerged out of the custom Manjaro build called &ldquo;Manjarowish&rdquo; which implemented a lot of great things such as performance enhancements or OpenSUSE style BTRFS with automated snapshots before each update by default. Garuda takes this to another level running on top of pure Arch which means always the latest and greatest packages! Eventually, there was no maintainer for the GNOME edition at the time I was this edition for a short time - being completely new to this kind of business I decided to step in and maintain it (at this time Garuda was still rather unknown - the Telegram group had about 20 members back then). Since then many things changed - a lot of new ideas were implemented, existing tools improved, and the team welcomed new members and people like it so far since the feedback has been mostly pretty overwhelming!</p>
-
-  
-  
-  
-  
-  
-  <figure>
-    
-    <img
-      class="mx-auto my-0 rounded-md"
-      alt=""
-      
-        loading="lazy"
-      
-      
-        
-        
-          
-        
-        
-          
-            width="1366"
-            height="768"
-            
-              srcset="/projects/garuda/early-gnome_hu21218363b650c8d1f899f35c322677e7_41854_330x0_resize_q100_h2_box_2.webp 330w,/projects/garuda/early-gnome_hu21218363b650c8d1f899f35c322677e7_41854_660x0_resize_q100_h2_box_2.webp 660w,/projects/garuda/early-gnome_hu21218363b650c8d1f899f35c322677e7_41854_1024x0_resize_q100_h2_box_2.webp 1024w,/projects/garuda/early-gnome_hu21218363b650c8d1f899f35c322677e7_41854_1320x0_resize_q100_h2_box_2.webp 2x"
-              src="/projects/garuda/early-gnome_hu21218363b650c8d1f899f35c322677e7_41854_660x0_resize_q100_h2_box_2.webp"
-            
-          
-        
-      
-    />
-    
-    
-  </figure>
-
-
-<h2 id="expansion-and-new-resources" class="relative group">Expansion and new resources🚸 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#expansion-and-new-resources" aria-label="Anchor">#</a></span></h2><p>Some time passed and the Garuda slowly grew. Everything I did was done using my hardware for quite some time - that changed when we were suggested to check out Fosshost, a project which provides all kinds of hosting services for open-source projects. Its goal is to &ldquo;support, promote, and advance the development and movement of free software&rdquo; which is kind of what we are trying to do with Garuda! Time before contributing to Garuda I was learning how to self-host a lot of open source projects including Searx and Nextcloud but sadly none of my people was actually interested in such things so this seemed like the perfect opportunity to do something useful with the knowledge I acquired..
-After some brainstorming, we decided to apply for resources (needed them, especially for the forum &amp; building - the cluster which it was running on before was possibly going to be shut down) and got them granted! This means we did not have to take donations to continue providing this distribution until now. There were three VPS for us to use, one to host web services like the website or Searx, one to build iso files (this one also builds packages for Chaotic-AUR now) and one to hold applications that require more storage (looking at you, Nextcloud). Also, the people behind Fosshost were really kind and helpful while migrating everything to their services - shoutouts to them!</p>
-<h2 id="setting-everything-up-" class="relative group">Setting everything up 🔧 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#setting-everything-up-" aria-label="Anchor">#</a></span></h2><p>After the initial setup of the servers (which I got helped with luckily, the Proxmox VNC window of the VMs was somewhat buggy and didn&rsquo;t input the characters I needed) it was time to deploy the applications. This was quite fun and I noticed that it was indeed easy for me after having done countless trial &amp; error sessions at my VPS earlier. The only thing which proved to be impossible to set up along with all other applications was Discourse, the forum software. This one comes with a complete installer that turns the system into a forum server and occupies both ports 80 and 443 (the ones needed for HTTP and HTTPS) which quite of interfered with NGINX, the proxy server used. Luckily Fosshost gave us one little instance to use for whatever we needed it for - indeed a lucky coincidence because it was perfect to run Discourse on! The migration from its previous location happened without issues. Inspired by the Fosshosts Telegram channel (which was bridged into Matrix, the first time I heard of it) I did some research on how to bridge our Telegram channel to a self-hosted Matrix instance as Matrix is an open-source and decentralized protocol which allows bridging into many known platforms - among them Telegram! Sounds like heaven for an open-source enthusiast who does not want companies to own his data? Well for me it did. Being new to Matrix it took some time to figure it all out but in the end, it worked quite well. Other things which were set up in the following month were a Telegram moderator bot (Rose - a great open-source and free bot) and all applications you can find here. This one also made it into Garudas browser settings as a start page! During this time we also transitioned from Garuda&rsquo;s previous domain (.in) to the one we are using today (.org) which was accompanied by me having to learn how to properly forward a domain to another one (you need SSL certificates for both domains, which I did not know back then). But luckily help was not far away and this issue got solved quickly!</p>
-<h2 id="the-future-" class="relative group">The future 🏆 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-future-" aria-label="Anchor">#</a></span></h2><p>A lot of things happened since that time, I really need to start documenting things again! Life sadly got super busy lately 🤔</p>
+10 machines listed.
+</code></pre><h2 id="moving-the-data-" class="relative group">Moving the data 👨‍💻 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#moving-the-data-" aria-label="Anchor">#</a></span></h2><p>The transition of all Chaotic-AUR services went quite painless, including the main node. After that, we started the main migration, which included all web services and their data. This was also the point, where the announced service disruptions occurred. The transfer of the data happened and most services were back after the estimated time frame had passed. Things still missing included Mastodon, which needed its database configuration fixed, Chaotic-AUR suddenly starting to misbehave after allocating ISO builds to it and Matrix bridges not being able to connect to the main instance. Though, after working on this for a whole day, it was time to sleep to not introduce additional issues due to being tired.</p>
+<p>The next day consisted of fixing the remaining issues - mostly database configurations, a missing port forward of the Matrix federation port, and adjusting the webserver configuration of Discourse to the new environment to avoid rate limits. By now, all issues that were found are worked out.</p>
+<h2 id="the-aftermath-" class="relative group">The aftermath 🚀 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#the-aftermath-" aria-label="Anchor">#</a></span></h2><p>After observing the system for the time being, we can say that things are considerably faster than before (loading forum pages is QUICK!), especially Chaotic-AUR builds since we are now able to build in RAM. One of the biggest advantages of this configuration turned out to be a disadvantage as well - the declarative nixos-containers. Since they would respond to every change of our configuration, changing a non-container-specific option would cause every container to be shut down and recreated, causing small downtimes of services. This should however not be an issue once the configuration is 100% completed.</p>
+<h2 id="things-left-to-do-" class="relative group">Things left to do? 🧐 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#things-left-to-do-" aria-label="Anchor">#</a></span></h2><p>We quickly noticed Chaotic-AUR builds would hit the rate limit of AUR, which is a problem since builds for the most part rely on sourcing packages from AUR. Not being able to connect means that every build fails. Basically, it is the same issue that plagues Piped, Invidious, Searx, and Whoogle instances for quite a while (especially Piped and Invidious were striking the rate limit after deploying to the new server very quickly, so they are still out of order). Though, we are working on a possible solution that involves rotating IPv6 addresses of the /64 subnet that Hetzner provides to every server for outgoing requests. Initial attempts caused web services to be unreachable and we are still investigating the cause for this.</p>
+<h2 id="conclusion-" class="relative group">Conclusion 🌍 <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#conclusion-" aria-label="Anchor">#</a></span></h2><p>This whole action was definitely a bigger operation than I expected at first, especially the transition of all the different web services, with more total downtime than anticipated. However, it also turned out to be a great learning opportunity and definitely provided a big enhancement to the performance of every component of Garuda&rsquo;s web services. And at this point, I&rsquo;d like to offer my sincere apologies for any inconvenience caused during the transition! I hope this provided some interesting insight into our current actions ☺</p>
 
     </div>
   </section>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>:copyright: 2021-2022 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
-    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Garuda Linux</title>
+      <link>https://dr460nf1r3.org/projects/nix-infra/</link>
+      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://dr460nf1r3.org/projects/nix-infra/</guid>
+      <description>This is a summary about the most recent major server maintenance we had at Garuda Linux / Chaotic-AUR :wrench:</description>
+    </item>
+    
     <item>
       <title>Ansible roles for the infra!</title>
       <link>https://dr460nf1r3.org/projects/ansible-infra/</link>
