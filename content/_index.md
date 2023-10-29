@@ -36,6 +36,14 @@ My most recent project was writing [Ansible roles]({{< ref "projects/ansible-inf
 {{< figure src="chaotic-aur.webp" >}}
 
 <center>
+ <h3> NixOS "dr460nixed" flake </h3>
+</center>
+
+I particularly enjoy maintaining my devices as well as the Garuda infrastructure, since they are both NixOS-driven. My setup is available as ISO with an installer, bringing this particular setup to everyone who likes it. 
+
+{{< figure src="dr460nixed.webp" >}}
+
+<center>
  <h3> FireDragon </h3>
 </center>
 

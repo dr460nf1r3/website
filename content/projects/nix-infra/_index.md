@@ -1,5 +1,5 @@
 ---
-title: "Garuda Linux"
+title: "Taking the infra's NixOS setup to the next level"
 date: 2023-10-29
 draft: false
 description: "The new NixOS infrastructure"
