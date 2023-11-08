@@ -11,7 +11,7 @@
     <item>
       <title>Improving Garuda&#39;s repository set via CI/CD pipelines</title>
       <link>https://dr460nf1r3.org/projects/garuda-ci/</link>
-      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/projects/garuda-ci/</guid>
       <description>This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &amp;#x1f527;</description>
     </item>

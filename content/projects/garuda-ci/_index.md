@@ -1,6 +1,6 @@
 ---
 title: "Improving Garuda's repository set via CI/CD pipelines"
-date: 2021-12-24
+date: 2023-11-08
 draft: false
 description: "How our repository setup got automated, bringing a handful of advantages with it"
 slug: "garuda-ci"
@@ -91,9 +91,7 @@ The [commitizen](https://github.com/commitizen-tools/commitizen) app is also abl
 
 ### Basic syntax/style checks
 
-Another great thing to be added to the new repository is checks against PKGBUILDs and other files. Every commit is checked for basic integrity with a set of linters ([have a look at the script behind it](https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/.ci/lint.sh?ref_type=heads)) by a pipeline run:
-
-<https://gitlab.com/garuda-linux/pkgbuilds/-/jobs/5487774423>
+Another great thing to be added to the new repository is checks against PKGBUILDs and other files. Every commit is checked for basic integrity with a set of linters ([have a look at the script behind it](https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/.ci/lint.sh?ref_type=heads)) by a [pipeline run](https://gitlab.com/garuda-linux/pkgbuilds/-/jobs/5487774423)!
 
 This would give instant feedback about whether obvious issues exist with a commit, which may be corrected (such as not complying with conventional commits!). Hopefully, it also increases code quality on its way by a bit :D The script may be run locally via `bash .ci/lint.sh`, possibly even correcting some of the issues by passing an argument `bash .ci/lint.sh apply` (dependencies of course need to be installed).
 

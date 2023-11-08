@@ -7,21 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>:copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
-    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dr460nf1r3.org/tags/repository/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improving Garuda&#39;s repository set via CI/CD pipelines</title>
+      <link>https://dr460nf1r3.org/projects/garuda-ci/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/projects/garuda-ci/</guid>
+      <description>This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &amp;#x1f527;</description>
+    </item>
     <item>
       <title>Chaotic-AUR</title>
       <link>https://dr460nf1r3.org/projects/chaotic-aur/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/projects/chaotic-aur/</guid>
       <description>As Chaotic-AUR is the repository (kind of an app store for Linux distributions) of Garuda Linux and one of the user repositories with the most (and most useful) packages out there I decided to help with maintenance and provide another mirror for it. Especially a massive increase of web traffic on the main server made this necessary!</description>
-    </item>
-    <item>
-      <title>Improving Garuda&#39;s repository set via CI/CD pipelines</title>
-      <link>https://dr460nf1r3.org/projects/garuda-ci/</link>
-      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/projects/garuda-ci/</guid>
-      <description>This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &amp;#x1f527;</description>
     </item>
   </channel>
 </rss>
