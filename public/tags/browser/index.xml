@@ -6,16 +6,15 @@
     <description>Recent content in browser on Dragons Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>:copyright: 2021-2022 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
-    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/browser/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>:copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dr460nf1r3.org/tags/browser/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The FireDragon browser</title>
       <link>https://dr460nf1r3.org/projects/firedragon/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
-      
       <guid>https://dr460nf1r3.org/projects/firedragon/</guid>
-      <description>Recently we got to know that Mozilla no longer supports free internet. Their browser, Firefox, collects a lot of telemetry by default. Since using Chromium-based browsers is not an alternative (There shouldn&amp;rsquo;t be a single browser engine dictating web standards! :eyes:), a better solution had to be found!</description>
+      <description>Recently we got to know that Mozilla no longer supports free internet. Their browser, Firefox, collects a lot of telemetry by default. Since using Chromium-based browsers is not an alternative (There shouldn&amp;rsquo;t be a single browser engine dictating web standards! &amp;#x1f440;), a better solution had to be found!</description>
     </item>
-    
   </channel>
 </rss>

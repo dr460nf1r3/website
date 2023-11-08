@@ -6,16 +6,15 @@
     <description>Recent content in ansible on Dragons Lair</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>:copyright: 2021-2022 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
-    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dr460nf1r3.org/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>:copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dr460nf1r3.org/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ansible roles for the infra!</title>
       <link>https://dr460nf1r3.org/projects/ansible-infra/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
-      
       <guid>https://dr460nf1r3.org/projects/ansible-infra/</guid>
-      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time-consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. :wrench:</description>
+      <description>As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time-consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. &amp;#x1f527;</description>
     </item>
-    
   </channel>
 </rss>

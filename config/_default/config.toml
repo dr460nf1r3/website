@@ -1,5 +1,5 @@
 baseURL = "https://dr460nf1r3.org/"
-copyright = ":copyright: 2021-2022 [dr460nf1r3](https://dr460nf1r3.org)"
+copyright = ":copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableGitInfo = true
@@ -11,7 +11,7 @@ theme = "congo"
 title = "Dragons Lair"
 
 [author]
-  bio = "Just an average FOSS enthusiast & distro maintainer"
+  bio = "Future DevOps engineer & distro maintainer"
   headline = "Busy taming dragons.."
   image = "author.webp"
   links = [
@@ -21,10 +21,9 @@ title = "Dragons Lair"
     { link = "https://dr460nf1r3.org" },
     { telegram = "https://t.me/dr460nf1r3" },
   ]
-  name = "Nico Jensch"
 
 [imaging]
-disableDate = true
-disableLatLong = true
-hint = "picture"
-quality = 100
+  disableDate = true
+  disableLatLong = true
+  hint = "picture"
+  quality = 100

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>infrastructure on Dragons Lair</title>
+    <link>https://dr460nf1r3.org/tags/infrastructure/</link>
+    <description>Recent content in infrastructure on Dragons Lair</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>:copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
+    <lastBuildDate>Fri, 24 Dec 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://dr460nf1r3.org/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Improving Garuda&#39;s repository set via CI/CD pipelines</title>
+      <link>https://dr460nf1r3.org/projects/garuda-ci/</link>
+      <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/projects/garuda-ci/</guid>
+      <description>This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &amp;#x1f527;</description>
+    </item>
+  </channel>
+</rss>
