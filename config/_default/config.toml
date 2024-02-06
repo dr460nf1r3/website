@@ -1,5 +1,5 @@
 baseURL = "https://dr460nf1r3.org/"
-copyright = ":copyright: 2021-2023 [dr460nf1r3](https://dr460nf1r3.org)"
+copyright = ":copyright: 2021-2024 [dr460nf1r3](https://dr460nf1r3.org)"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableGitInfo = true
@@ -11,7 +11,7 @@ theme = "congo"
 title = "Dragons Lair"
 
 [author]
-  bio = "Future DevOps engineer & distro maintainer"
+  bio = "Future DevOps engineer & FOSS maintainer"
   headline = "Busy taming dragons.."
   image = "author.webp"
   links = [
