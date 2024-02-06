@@ -4,7 +4,8 @@
 
 
 
-<!DOCTYPE html>
+
+<!doctype html>
 <html
   lang="en"
   dir="ltr"
@@ -41,8 +42,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.9c5e0fe373852c3d80a1d01584739dd42350d0ef07a671c2bb20abdce5b800b6.css"
-    integrity="sha256-nF4P43OFLD2AodAVhHOd1CNQ0O8HpnHCuyCr3OW4ALY="
+    href="/css/main.bundle.min.79b138224f047dc38efeec3375c40acb60602e61abddccd41e061e214534fa59.css"
+    integrity="sha256-ebE4Ik8EfcOO/uwzdcQKy2BgLmGr3czUHgYeIUU0&#43;lk="
   />
   
     
@@ -50,8 +51,10 @@
     
   
   
+  
     
     
+  
   
   
   
@@ -93,21 +96,21 @@
   
   
   
+  
   <meta property="og:title" content="Improving Garuda&#39;s repository set via CI/CD pipelines" />
 <meta property="og:description" content="How our repository setup got automated, bringing a handful of advantages with it" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://dr460nf1r3.org/projects/garuda-ci/" />
 
 
-  <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Improving Garuda&#39;s repository set via CI/CD pipelines"/>
+  <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Improving Garuda&#39;s repository set via CI/CD pipelines"/>
 <meta name="twitter:description" content="How our repository setup got automated, bringing a handful of advantages with it"/>
 
   
   
 
   
-  
+  <meta name="author" content="Nico Jensch" />
   
     
       <link href="mailto:contact@dr460nf1r3.org" rel="me" />
@@ -135,33 +138,36 @@
   
   
 
+
   
   
 </head>
 <body
-    class="flex flex-col h-screen px-6 m-auto text-lg leading-7 max-w-7xl bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral sm:px-14 md:px-24 lg:px-32"
+    class="m-auto flex h-screen max-w-7xl flex-col bg-neutral px-6 text-lg leading-7 text-neutral-900 sm:px-14 md:px-24 lg:px-32 dark:bg-neutral-800 dark:text-neutral"
   >
     <div id="the-top" class="absolute flex self-center">
       <a
-        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        class="-translate-y-8 rounded-b-lg bg-primary-200 px-3 py-1 text-sm focus:translate-y-0 dark:bg-neutral-600"
         href="#main-content"
-        ><span class="font-bold pe-2 text-primary-600 dark:text-primary-400">&darr;</span
+        ><span class="pe-2 font-bold text-primary-600 dark:text-primary-400">&darr;</span
         >Skip to main content</a
       >
     </div>
     
     
-      <header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+      <header class="py-6 font-semibold text-neutral-900 print:hidden sm:py-10 dark:text-neutral">
   <nav class="flex items-start justify-between sm:items-center">
     
     <div class="flex flex-row items-center">
       
     <a href="/" class="mr-2">
+      
       <img
         src="/logo.webp"
         width="150"
         height="33"
-        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left"
+        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left
+        "
         alt="Dragons Lair"
       />
     </a>
@@ -169,7 +175,7 @@
     </div>
     
     
-      <ul class="flex flex-col list-none text-end sm:flex-row">
+      <ul class="flex list-none flex-col text-end sm:flex-row">
         
           
             
@@ -237,12 +243,12 @@
             </li>
           
           
-            <li class="mb-1 group sm:mb-0 sm:me-7 sm:last:me-0">
+            <li class="group mb-1 sm:mb-0 sm:me-7 sm:last:me-0">
               <button id="search-button-m0" title="Search (/)">
                 <span
-                  class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                  class="group-dark:hover:text-primary-400 transition-colors group-hover:text-primary-600"
                 >
-                  <span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+                  <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
 </span>
                 </span>
               </button>
@@ -255,7 +261,7 @@
 </header>
 
     
-    <div class="relative flex flex-col grow">
+    <div class="relative flex grow flex-col">
       <main id="main-content" class="grow">
         
   
@@ -267,10 +273,11 @@
     class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
   >
     
-    <div class="min-w-0 min-h-0 max-w-prose grow">
+    <div class="min-h-0 min-w-0 max-w-prose grow">
       <h2 id="intro" class="relative group">Intro <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#intro" aria-label="Anchor">#</a></span></h2><p>Hello everyone! &#x1f468;&zwj;&#x1f4bb;</p>
 <p>This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &#x1f527;</p>
-<h2 id="motivation" class="relative group">Motivation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#motivation" aria-label="Anchor">#</a></span></h2><p>For those, who already worked with our git repos to contribute, as well as the ones who took a look at what the source of certain packages looks like, you might have noticed that we had <em>a LOT</em> of different repositories for all kinds of purposes. This also included repositories, which only inherited one PKGBUILD and its <code>.install</code> file. Treating things this way had a simple reason: the scripts used to build packages (<a href="https://github.com/chaotic-aur/toolbox" target="_blank" rel="noreferrer">chaotic-toolbox</a>) only support custom Git sources that have the PKGBUILD right in the root of the cloned repository, which is just how the AUR does it.</p>
+<h2 id="motivation" class="relative group">Motivation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#motivation" aria-label="Anchor">#</a></span></h2><p>For those, who already worked with our git repos to contribute, as well as the ones who took a look at what the source of certain packages looks like, you might have noticed that we had <em>a LOT</em> of different repositories for all kinds of purposes. This also included repositories, which only inherited one PKGBUILD and its <code>.install</code> file. Treating things this way had a simple reason: the scripts used to build packages (
+<a href="https://github.com/chaotic-aur/toolbox" target="_blank" rel="noreferrer">chaotic-toolbox</a>) only support custom Git sources that have the PKGBUILD right in the root of the cloned repository, which is just how the AUR does it.</p>
 <p>After having worked with this setup for quite a while, it became obvious that having all of the build recipes in one place would be a great improvement to everyone having to deal with multiple packages at once. Not only would this allow changing multiple PKGBUILD&rsquo;s dependencies without having to do countless git operations (sure, those can be scripted. But why make it harder than it has to be?), but it also provides the possibility to perform the same actions for all PKGBUILDs easily. And not to forget, working with CI/CD pipelines is a task I enjoy a lot! 🤭</p>
 <h2 id="advantages-and-plans" class="relative group">Advantages and plans <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#advantages-and-plans" aria-label="Anchor">#</a></span></h2><p>These are some of the advantages in comparison to the situation we had before (the scope of this is the <code>garuda</code> repository, not the <code>chaotic-aur</code> one!):</p>
 <ul>
@@ -285,19 +292,28 @@
 <p>All of these were implemented by now.</p>
 <h2 id="what-changed" class="relative group">What changed? <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#what-changed" aria-label="Anchor">#</a></span></h2><p>Let&rsquo;s look at some of the changes and how they affect things.</p>
 <h3 id="pkgbuild-location-and-where-to-edit-files" class="relative group">PKGBUILD location and where to edit files <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#pkgbuild-location-and-where-to-edit-files" aria-label="Anchor">#</a></span></h3><p>This is a change that will be relevant for everyone who wants to contribute changes to packages and settings. Unlike before, there is now a single unified repository for all PKGBUILDs:</p>
-<p><a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">https://gitlab.com/garuda-linux/pkgbuilds</a></p>
-<p>As the description already suggests, some packages also have their sources included here. This applies to most packages, which consist of up to a few text files, like <code>garuda-fish-config</code> or <code>garuda-hooks</code>. The other ones are the ones that require more extensive source code or reference external repos (all packages not listed in the <a href="https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/SOURCES?ref_type=heads" target="_blank" rel="noreferrer">SOURCES</a> file automatically belong to the first category). This means the following for changing files or reporting issues:</p>
+<p>
+<a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">https://gitlab.com/garuda-linux/pkgbuilds</a></p>
+<p>As the description already suggests, some packages also have their sources included here. This applies to most packages, which consist of up to a few text files, like <code>garuda-fish-config</code> or <code>garuda-hooks</code>. The other ones are the ones that require more extensive source code or reference external repos (all packages not listed in the 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/SOURCES?ref_type=heads" target="_blank" rel="noreferrer">SOURCES</a> file automatically belong to the first category). This means the following for changing files or reporting issues:</p>
 <ol>
-<li>Packaging matters should be implemented/reported in the <a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">PKGBUILDs</a> repository</li>
+<li>Packaging matters should be implemented/reported in the 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">PKGBUILDs</a> repository</li>
 <li>Issues/changes to settings should be reported in their respective source repositories.</li>
 </ol>
 <p>For version bumps, this means:</p>
 <ol>
-<li>Packages of the first category get bumped via the <a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">PKGBUILDs</a> repository, triggering an instant deployment by supplying <code>[deploy $pkgname]</code> in the commit message</li>
-<li>Packages of the second category just need a new tag in their source repositories to be pushed in case no packaging changes occur (which does not happen <em>that</em> often after all), the rest - updating PKGBUILD, checksums, triggering a build - will automatically be done by the <a href="https://gitlab.com/garuda-linux/pkgbuilds/-/commit/f97affd8b4d20d287192bff47fed5fc9e3d7a9d5" target="_blank" rel="noreferrer">PKGBUILDs CI pipeline</a>!</li>
+<li>Packages of the first category get bumped via the 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds" target="_blank" rel="noreferrer">PKGBUILDs</a> repository, triggering an instant deployment by supplying <code>[deploy $pkgname]</code> in the commit message</li>
+<li>Packages of the second category just need a new tag in their source repositories to be pushed in case no packaging changes occur (which does not happen <em>that</em> often after all), the rest - updating PKGBUILD, checksums, triggering a build - will automatically be done by the 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/commit/f97affd8b4d20d287192bff47fed5fc9e3d7a9d5" target="_blank" rel="noreferrer">PKGBUILDs CI pipeline</a>!</li>
 </ol>
-<p>This also means that everyone can now inspect the build status for packages of the <code>[garuda]</code> repository by looking at the <a href="https://gitlab.com/garuda-linux/pkgbuilds/-/pipelines" target="_blank" rel="noreferrer">pipeline runs</a>.</p>
-<h3 id="generating-changelogs" class="relative group">Generating changelogs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#generating-changelogs" aria-label="Anchor">#</a></span></h3><p>By adopting <a href="https://www.conventionalcommits.org/" target="_blank" rel="noreferrer">conventional commit messages</a> with the <a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#type" target="_blank" rel="noreferrer">Angular convention</a>, another manual task could be automated. Changelogs are now automatically generated via <a href="https://github.com/commitizen-tools/commitizen" target="_blank" rel="noreferrer">commitizen</a>. For each automated version update of packages of the before-mentioned second category, changelogs of the source repos are automatically attached to the commit message.</p>
+<p>This also means that everyone can now inspect the build status for packages of the <code>[garuda]</code> repository by looking at the 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/pipelines" target="_blank" rel="noreferrer">pipeline runs</a>.</p>
+<h3 id="generating-changelogs" class="relative group">Generating changelogs <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#generating-changelogs" aria-label="Anchor">#</a></span></h3><p>By adopting 
+<a href="https://www.conventionalcommits.org/" target="_blank" rel="noreferrer">conventional commit messages</a> with the 
+<a href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#type" target="_blank" rel="noreferrer">Angular convention</a>, another manual task could be automated. Changelogs are now automatically generated via 
+<a href="https://github.com/commitizen-tools/commitizen" target="_blank" rel="noreferrer">commitizen</a>. For each automated version update of packages of the before-mentioned second category, changelogs of the source repos are automatically attached to the commit message.</p>
 <p>This however only works, if the commit message convention is used. Otherwise, commitizen is unable to parse them accordingly. To ensure this is always the case, another CI job checks whether commits comply with the format.</p>
 <p>For contributors, this basically means using the correct commit messages. It may sound harder than it is. There would be a handful of most used formats:</p>
 <ul>
@@ -312,57 +328,108 @@
 <li>Think about the CHANGELOG: Your commits will probably end up in the changelog so try writing for it, but also keep in mind that you can skip sending commits to the CHANGELOG by using different keywords (like build).</li>
 <li>Use a commit per new feature: if you introduce multiple things related to the same commit, squash them. This is useful for auto-generating CHANGELOG.</li>
 </ul>
-<p>The <a href="https://github.com/commitizen-tools/commitizen" target="_blank" rel="noreferrer">commitizen</a> app is also able to interactively generate a complying commit message, so it can be a great help in case someone doesn&rsquo;t want to spend time reading documentation.</p>
-<h3 id="basic-syntaxstyle-checks" class="relative group">Basic syntax/style checks <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-syntaxstyle-checks" aria-label="Anchor">#</a></span></h3><p>Another great thing to be added to the new repository is checks against PKGBUILDs and other files. Every commit is checked for basic integrity with a set of linters (<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/.ci/lint.sh?ref_type=heads" target="_blank" rel="noreferrer">have a look at the script behind it</a>) by a <a href="https://gitlab.com/garuda-linux/pkgbuilds/-/jobs/5487774423" target="_blank" rel="noreferrer">pipeline run</a>!</p>
+<p>The 
+<a href="https://github.com/commitizen-tools/commitizen" target="_blank" rel="noreferrer">commitizen</a> app is also able to interactively generate a complying commit message, so it can be a great help in case someone doesn&rsquo;t want to spend time reading documentation.</p>
+<h3 id="basic-syntaxstyle-checks" class="relative group">Basic syntax/style checks <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#basic-syntaxstyle-checks" aria-label="Anchor">#</a></span></h3><p>Another great thing to be added to the new repository is checks against PKGBUILDs and other files. Every commit is checked for basic integrity with a set of linters (
+<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/blob/main/.ci/lint.sh?ref_type=heads" target="_blank" rel="noreferrer">have a look at the script behind it</a>) by a 
+<a href="https://gitlab.com/garuda-linux/pkgbuilds/-/jobs/5487774423" target="_blank" rel="noreferrer">pipeline run</a>!</p>
 <p>This would give instant feedback about whether obvious issues exist with a commit, which may be corrected (such as not complying with conventional commits!). Hopefully, it also increases code quality on its way by a bit :D The script may be run locally via <code>bash .ci/lint.sh</code>, possibly even correcting some of the issues by passing an argument <code>bash .ci/lint.sh apply</code> (dependencies of course need to be installed).</p>
 <p>If there are any other helpful tools in this regard, let me know! 😄</p>
-<h3 id="implementation" class="relative group">Implementation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#implementation" aria-label="Anchor">#</a></span></h3><p>Well, the implementation mostly consisted of writing the required bash scripts, preparing the server to accept build requests (securing it properly on the way), and testing it. First, the linter script was implemented, followed by the deployment (since it checks first and only deploys if checks were successful) via commit message. After that, the version bumps were implemented. It turned out to be working better than I anticipated! After having the setup in a working state, all of our packages/source repositories were either deleted (the obsolete ones, before the content was moved to our <a href="https://gitlab.com/garuda-linux/archive" target="_blank" rel="noreferrer">archive</a> of course) or had their PKGBUILD removed and a new <a href="https://gitlab.com/garuda-linux/themes-and-settings/settings/garuda-dr460nized/-/blob/master/README.md?ref_type=heads" target="_blank" rel="noreferrer">README</a> explaining where to find things and how to contribute added (the source repos mostly). Also, all package sources are now checked via sha256sums, some were either using md5sum or SKIP before. Existing PKGBUILDs needed issues reported by <a href="https://www.shellcheck.net/" target="_blank" rel="noreferrer">shellcheck</a>/<a href="https://github.com/mvdan/sh" target="_blank" rel="noreferrer">shfmt</a> to be worked out before the CI would actually be useful. Of course, documentation had to be updated with a new <a href="https://docs.garudalinux.net/repositories/general" target="_blank" rel="noreferrer">repository section</a>.</p>
+<h3 id="implementation" class="relative group">Implementation <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#implementation" aria-label="Anchor">#</a></span></h3><p>Well, the implementation mostly consisted of writing the required bash scripts, preparing the server to accept build requests (securing it properly on the way), and testing it. First, the linter script was implemented, followed by the deployment (since it checks first and only deploys if checks were successful) via commit message. After that, the version bumps were implemented. It turned out to be working better than I anticipated! After having the setup in a working state, all of our packages/source repositories were either deleted (the obsolete ones, before the content was moved to our 
+<a href="https://gitlab.com/garuda-linux/archive" target="_blank" rel="noreferrer">archive</a> of course) or had their PKGBUILD removed and a new 
+<a href="https://gitlab.com/garuda-linux/themes-and-settings/settings/garuda-dr460nized/-/blob/master/README.md?ref_type=heads" target="_blank" rel="noreferrer">README</a> explaining where to find things and how to contribute added (the source repos mostly). Also, all package sources are now checked via sha256sums, some were either using md5sum or SKIP before. Existing PKGBUILDs needed issues reported by 
+<a href="https://www.shellcheck.net/" target="_blank" rel="noreferrer">shellcheck</a>/
+<a href="https://github.com/mvdan/sh" target="_blank" rel="noreferrer">shfmt</a> to be worked out before the CI would actually be useful. Of course, documentation had to be updated with a new 
+<a href="https://docs.garudalinux.net/repositories/general" target="_blank" rel="noreferrer">repository section</a>.</p>
 
   
   
   
+  
+  
+
   
   
   <figure>
     
-    <img
-      class="mx-auto my-0 rounded-md"
-      alt=""
-      
-        loading="lazy"
       
       
-        
-        
+
+
+
+
+
+
+
+
+  
+    <picture
+      
+      
+    >
+      
+      
+      
+      
+        <source
           
-        
-        
-          
-            width="810"
-            height="758"
+            srcset="/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_330x0_resize_q100_h2_box_2.webp 330w,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_660x0_resize_q100_h2_box_2.webp 660w
             
-              srcset="/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_330x0_resize_q100_h2_box_2.webp 330w,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_660x0_resize_q100_h2_box_2.webp 660w,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_1024x0_resize_q100_h2_box_2.webp 1024w,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_1320x0_resize_q100_h2_box_2.webp 2x"
-              src="/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_660x0_resize_q100_h2_box_2.webp"
+              
+                ,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_810x758_resize_q100_h2_box_2.webp 810w
+              
             
+            
+              
+                ,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_810x758_resize_q100_h2_box_2.webp 810w
+              
+            "
           
-        
+          sizes="100vw"
+          type="image/webp"
+        />
       
-    />
-    
+      <img
+        width="810"
+        height="758"
+        
+        
+        loading="lazy" decoding="async"
+        
+          src="/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_660x0_resize_q100_h2_box_2.webp"
+          srcset="/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_330x0_resize_q100_h2_box_2.webp 330w,/projects/garuda-ci/pipeline_hu895eef36c8dbff61401d2ed453ffb4e2_52518_660x0_resize_q100_h2_box_2.webp 660w
+          
+            ,/projects/garuda-ci/pipeline.webp 810w
+          
+          
+            ,/projects/garuda-ci/pipeline.webp 810w
+          "
+          sizes="100vw"
+        
+      />
+    </picture>
+  
+
+
     
   </figure>
 
 
-<h3 id="looking-forward" class="relative group">Looking forward <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#looking-forward" aria-label="Anchor">#</a></span></h3><p>Things are implemented and working quite well so far. I&rsquo;m sure there will be some more bugs to be worked out, but so far, so good! A similar setup may be implemented on our <a href="https://gitlab.com/garuda-linux/tools/iso-profiles" target="_blank" rel="noreferrer">iso-profiles</a> repo, but for ISO builds &#x1f604; I hope that my efforts to better document things via our <a href="https://docs.garudalinux.net" target="_blank" rel="noreferrer">infra docs</a>, as well as to apply certain standards encourage more people (also on the infra side!) to contribute to our beloved project &#x2764;&#xfe0f;</p>
-<p>As a positive side-effect our Telegram channel for <a href="https://t.me/garuda_updates" target="_blank" rel="noreferrer">GitLab updates</a> is working again since I found Telegram notifications to be an inbuilt integration by now (it didn&rsquo;t use to be?), the previous webhook solution we used seemingly got abandoned and wasn&rsquo;t working reliably/at all.</p>
-<p>Furthermore, I&rsquo;d love to make better use of GitLabs features, eg. by tracking current bigger tasks via <a href="https://gitlab.com/groups/garuda-linux/-/epics?state=opened&amp;page=1&amp;sort=start_date_desc" target="_blank" rel="noreferrer">Epics</a> and <a href="https://gitlab.com/garuda-linux/infra-nix/-/issues/2" target="_blank" rel="noreferrer">corresponding issues</a>. This should also provide a better insight into what we are currently up to for everyone who is interested in these matters.</p>
+<h3 id="looking-forward" class="relative group">Looking forward <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#looking-forward" aria-label="Anchor">#</a></span></h3><p>Things are implemented and working quite well so far. I&rsquo;m sure there will be some more bugs to be worked out, but so far, so good! A similar setup may be implemented on our 
+<a href="https://gitlab.com/garuda-linux/tools/iso-profiles" target="_blank" rel="noreferrer">iso-profiles</a> repo, but for ISO builds &#x1f604; I hope that my efforts to better document things via our 
+<a href="https://docs.garudalinux.net" target="_blank" rel="noreferrer">infra docs</a>, as well as to apply certain standards encourage more people (also on the infra side!) to contribute to our beloved project &#x2764;&#xfe0f;</p>
+<p>As a positive side-effect our Telegram channel for 
+<a href="https://t.me/garuda_updates" target="_blank" rel="noreferrer">GitLab updates</a> is working again since I found Telegram notifications to be an inbuilt integration by now (it didn&rsquo;t use to be?), the previous webhook solution we used seemingly got abandoned and wasn&rsquo;t working reliably/at all.</p>
+<p>Furthermore, I&rsquo;d love to make better use of GitLabs features, eg. by tracking current bigger tasks via 
+<a href="https://gitlab.com/groups/garuda-linux/-/epics?state=opened&amp;page=1&amp;sort=start_date_desc" target="_blank" rel="noreferrer">Epics</a> and 
+<a href="https://gitlab.com/garuda-linux/infra-nix/-/issues/2" target="_blank" rel="noreferrer">corresponding issues</a>. This should also provide a better insight into what we are currently up to for everyone who is interested in these matters.</p>
 <p>That&rsquo;s all for now, thanks for reading! &#x1f917;</p>
 
     </div>
   </section>
   
-    <section class="mt-10 prose dark:prose-invert">
-      <p class="py-8 border-t">
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
         <em>There's no articles to list here yet.</em>
       </p>
     </section>
@@ -388,7 +455,8 @@
       
       
         <p class="text-sm text-neutral-500 dark:text-neutral-400">
-            ©️ 2021-2023 <a href="https://dr460nf1r3.org" target="_blank" rel="noreferrer">dr460nf1r3</a>
+            ©️ 2021-2024 
+<a href="https://dr460nf1r3.org" target="_blank" rel="noreferrer">dr460nf1r3</a>
         </p>
       
       
@@ -404,17 +472,17 @@
         >
           <button id="appearance-switcher-0" type="button" aria-label="appearance switcher">
             <div
-              class="flex items-center justify-center w-12 h-12 dark:hidden"
+              class="flex h-12 w-12 items-center justify-center dark:hidden"
               title="Switch to dark appearance"
             >
-              <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
 </span>
             </div>
             <div
-              class="items-center justify-center hidden w-12 h-12 dark:flex"
+              class="hidden h-12 w-12 items-center justify-center dark:flex"
               title="Switch to light appearance"
             >
-              <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+              <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
 </span>
             </div>
           </button>
@@ -427,37 +495,37 @@
 </footer>
 <div
   id="search-wrapper"
-  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm dark:bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh]"
+  class="invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col bg-neutral-500/50 p-4 backdrop-blur-sm sm:p-6 md:p-[10vh] lg:p-[12vh] dark:bg-neutral-900/50"
   data-url="https://dr460nf1r3.org/"
 >
   <div
     id="search-modal"
-    class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-200 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
+    class="top-20 mx-auto flex min-h-0 w-full max-w-3xl flex-col rounded-md border border-neutral-200 bg-neutral shadow-lg dark:border-neutral-700 dark:bg-neutral-800"
   >
-    <header class="relative z-10 flex items-center justify-between flex-none px-2">
-      <form class="flex items-center flex-auto min-w-0">
-        <div class="flex items-center justify-center w-8 h-8 text-neutral-400">
-          <span class="relative inline-block align-text-bottom px-1 icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
+    <header class="relative z-10 flex flex-none items-center justify-between px-2">
+      <form class="flex min-w-0 flex-auto items-center">
+        <div class="flex h-8 w-8 items-center justify-center text-neutral-400">
+          <span class="icon relative inline-block px-1 align-text-bottom"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg>
 </span>
         </div>
         <input
           type="search"
           id="search-query"
-          class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
+          class="mx-1 flex h-12 flex-auto appearance-none bg-transparent focus:outline-dotted focus:outline-2 focus:outline-transparent"
           placeholder="Search"
           tabindex="0"
         />
       </form>
       <button
         id="close-search-button"
-        class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+        class="flex h-8 w-8 items-center justify-center text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
         title="Close (Esc)"
       >
-        <span class="relative inline-block align-text-bottom px-1 icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+        <span class="icon relative inline-block px-1 align-text-bottom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
 </span>
       </button>
     </header>
-    <section class="flex-auto px-2 overflow-auto">
+    <section class="flex-auto overflow-auto px-2">
       <ul id="search-results">
         
       </ul>
