@@ -12,7 +12,8 @@ This website serves as a personal blog and will be dealing with Linux and FOSS p
 
 For a few years, I have found a deep passion for open source and Linux. As I kept learning about the importance of FOSS ecosystems, I quickly got interested in self-hosting open-source alternatives and contributing to a few projects myself. That's also how I got involved in the development of [Garuda Linux](https://garudalinux.org).
 
-My most recent project was writing [Ansible roles]({{< ref "projects/ansible-infra" >}}) for the whole Garuda Linux and Chaotic-AUR infrastructure. I'm really happy with how it turned out! :blush:
+My most recent project is writing a new build system for [Garuda Linux](https://gitlab.com/garuda-linux/pkgbuilds) and [Chaotic-AUR](https://github.com/chaotic-cx/chaotic-repository-template) using on GitLab CI, Bash and Docker :blush: During work hours, I'm in training to become a professional application developer.
+
 <br>
 
 <center>
