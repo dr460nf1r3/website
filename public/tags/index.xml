@@ -10,122 +10,122 @@
     <lastBuildDate>Wed, 08 Nov 2023 18:00:40 +0100</lastBuildDate>
     <atom:link href="https://dr460nf1r3.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>foss</title>
+      <title>Ci/Cd</title>
+      <link>https://dr460nf1r3.org/tags/ci/cd/</link>
+      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foss</title>
       <link>https://dr460nf1r3.org/tags/foss/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/foss/</guid>
       <description></description>
     </item>
     <item>
-      <title>garuda</title>
+      <title>Garuda</title>
       <link>https://dr460nf1r3.org/tags/garuda/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/garuda/</guid>
       <description></description>
     </item>
     <item>
-      <title>infrastructure</title>
+      <title>Infrastructure</title>
       <link>https://dr460nf1r3.org/tags/infrastructure/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/infrastructure/</guid>
       <description></description>
     </item>
     <item>
-      <title>linux</title>
+      <title>Linux</title>
       <link>https://dr460nf1r3.org/tags/linux/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/linux/</guid>
       <description></description>
     </item>
     <item>
-      <title>open source</title>
+      <title>Open Source</title>
       <link>https://dr460nf1r3.org/tags/open-source/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
-      <title>pipelines</title>
+      <title>Pipelines</title>
       <link>https://dr460nf1r3.org/tags/pipelines/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/pipelines/</guid>
       <description></description>
     </item>
     <item>
-      <title>privacy</title>
+      <title>Privacy</title>
       <link>https://dr460nf1r3.org/tags/privacy/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/privacy/</guid>
       <description></description>
     </item>
     <item>
-      <title>repository</title>
+      <title>Repository</title>
       <link>https://dr460nf1r3.org/tags/repository/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/repository/</guid>
       <description></description>
     </item>
     <item>
-      <title>chaotic-aur</title>
+      <title>Chaotic-Aur</title>
       <link>https://dr460nf1r3.org/tags/chaotic-aur/</link>
       <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/chaotic-aur/</guid>
       <description></description>
     </item>
     <item>
-      <title>ansible</title>
+      <title>Ansible</title>
       <link>https://dr460nf1r3.org/tags/ansible/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/ansible/</guid>
       <description></description>
     </item>
     <item>
-      <title>arch</title>
+      <title>Arch</title>
       <link>https://dr460nf1r3.org/tags/arch/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/arch/</guid>
       <description></description>
     </item>
     <item>
-      <title>aur</title>
+      <title>Aur</title>
       <link>https://dr460nf1r3.org/tags/aur/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/aur/</guid>
       <description></description>
     </item>
     <item>
-      <title>browser</title>
+      <title>Browser</title>
       <link>https://dr460nf1r3.org/tags/browser/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/browser/</guid>
       <description></description>
     </item>
     <item>
-      <title>dr460nized</title>
+      <title>Dr460nized</title>
       <link>https://dr460nf1r3.org/tags/dr460nized/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/dr460nized/</guid>
       <description></description>
     </item>
     <item>
-      <title>firedragon</title>
+      <title>Firedragon</title>
       <link>https://dr460nf1r3.org/tags/firedragon/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/firedragon/</guid>
       <description></description>
     </item>
     <item>
-      <title>garuda-linux</title>
+      <title>Garuda-Linux</title>
       <link>https://dr460nf1r3.org/tags/garuda-linux/</link>
       <pubDate>Fri, 24 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/garuda-linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ci/cd</title>
-      <link>https://dr460nf1r3.org/tags/ci/cd/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/ci/cd/</guid>
       <description></description>
     </item>
   </channel>
