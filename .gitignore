@@ -1,3 +1,4 @@
 .hugo_build.lock
+.idea/
 node_modules/
 resources/
