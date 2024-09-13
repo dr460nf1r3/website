@@ -7,8 +7,43 @@
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>:copyright: 2021-2024 [dr460nf1r3](https://dr460nf1r3.org)</copyright>
-    <lastBuildDate>Wed, 08 Nov 2023 18:00:40 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 13 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dr460nf1r3.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chaotic-Aur</title>
+      <link>https://dr460nf1r3.org/tags/chaotic-aur/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/chaotic-aur/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Foss</title>
+      <link>https://dr460nf1r3.org/tags/foss/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/foss/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Garuda</title>
+      <link>https://dr460nf1r3.org/tags/garuda/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/garuda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>https://dr460nf1r3.org/tags/linux/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Source</title>
+      <link>https://dr460nf1r3.org/tags/open-source/</link>
+      <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://dr460nf1r3.org/tags/open-source/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Ci/Cd</title>
       <link>https://dr460nf1r3.org/tags/ci/cd/</link>
@@ -17,38 +52,10 @@
       <description></description>
     </item>
     <item>
-      <title>Foss</title>
-      <link>https://dr460nf1r3.org/tags/foss/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/foss/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Garuda</title>
-      <link>https://dr460nf1r3.org/tags/garuda/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/garuda/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Infrastructure</title>
       <link>https://dr460nf1r3.org/tags/infrastructure/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/infrastructure/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://dr460nf1r3.org/tags/linux/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Open Source</title>
-      <link>https://dr460nf1r3.org/tags/open-source/</link>
-      <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/open-source/</guid>
       <description></description>
     </item>
     <item>
@@ -70,13 +77,6 @@
       <link>https://dr460nf1r3.org/tags/repository/</link>
       <pubDate>Wed, 08 Nov 2023 00:00:00 +0000</pubDate>
       <guid>https://dr460nf1r3.org/tags/repository/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chaotic-Aur</title>
-      <link>https://dr460nf1r3.org/tags/chaotic-aur/</link>
-      <pubDate>Sun, 29 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://dr460nf1r3.org/tags/chaotic-aur/</guid>
       <description></description>
     </item>
     <item>

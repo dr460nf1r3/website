@@ -17,8 +17,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#FFFFFF" />
   
-  <title>Linux &middot; Dragons Lair</title>
-    <meta name="title" content="Linux &middot; Dragons Lair" />
+  <title>Short updates about what&#39;s going on &middot; Dragons Lair</title>
+    <meta name="title" content="Short updates about what&#39;s going on &middot; Dragons Lair" />
   
   
   
@@ -73,9 +73,7 @@
   <meta
     name="description"
     content="
-      
-        Be aware! Linux, tech adventures &amp; dragons inside
-      
+      Giving some updates about what is currently on my mind
     "
   />
   
@@ -83,8 +81,8 @@
     <meta name="robots" content="index, follow" />
   
   
-  <link rel="canonical" href="https://dr460nf1r3.org/tags/linux/" />
-  <link rel="alternate" type="application/rss+xml" href="/tags/linux/index.xml" title="Dragons Lair" />
+  <link rel="canonical" href="https://dr460nf1r3.org/projects/update-240913/" />
+  <link rel="alternate" type="application/rss+xml" href="/projects/update-240913/index.xml" title="Dragons Lair" />
   
   
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -99,17 +97,17 @@
   
   
   
-  <meta property="og:url" content="https://dr460nf1r3.org/tags/linux/">
+  <meta property="og:url" content="https://dr460nf1r3.org/projects/update-240913/">
   <meta property="og:site_name" content="Dragons Lair">
-  <meta property="og:title" content="Linux">
-  <meta property="og:description" content="Be aware! Linux, tech adventures &amp; dragons inside">
+  <meta property="og:title" content="Short updates about what&#39;s going on">
+  <meta property="og:description" content="Giving some updates about what is currently on my mind">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Linux">
-  <meta name="twitter:description" content="Be aware! Linux, tech adventures &amp; dragons inside">
+  <meta name="twitter:title" content="Short updates about what&#39;s going on">
+  <meta name="twitter:description" content="Giving some updates about what is currently on my mind">
 
   
   
@@ -270,342 +268,50 @@
     <div class="relative flex grow flex-col">
       <main id="main-content" class="grow">
         
+  
   <header>
     
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Linux</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Short updates about what&#39;s going on</h1>
   </header>
-  
-  <section>
+  <section
+    class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row"
+  >
     
-      <section>
-        
-          
-            <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projects/update-240913/"
-          >Short updates about what's going on</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span>642 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
+    <div class="min-h-0 min-w-0 max-w-prose grow">
+      <h2 id="first-of-all" class="relative group">First of all <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#first-of-all" aria-label="Anchor">#</a></span></h2><p>It has been quite a while since the last post I made. Of course, at this time I have been doing a lot of things as usual &#x1f601;</p>
+<h2 id="personal-life" class="relative group">Personal life <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#personal-life" aria-label="Anchor">#</a></span></h2><p>Since the first of April, my previous occupation changed from being in training as a system administrator to being in training for application development. Since it&rsquo;s easy to change the specialization, I lost no time and am now very happy to be doing programming as a daytime job.
+While system administration is fun, it didn&rsquo;t turn out to be the thing I want to be doing every day as a job, at least not in a corporate/job environment.
+Programming did turn out to be the thing I love doing most, which also emerged from the fact that it has always fascinated me from day one.
+So NodeJs, NestJs, and Angular are very likely what I&rsquo;ll be doing most of my daily life during the next years.</p>
+<h2 id="chaotic-manager--new-build-system" class="relative group">Chaotic Manager / new build system <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#chaotic-manager--new-build-system" aria-label="Anchor">#</a></span></h2><p>Being fascinated by CI and automation, I had the idea of moving Chaotic-AUR&rsquo;s infra 3.0, mostly consisting of a toolbox of bash scripts gluing together multiple very different builders to a complete build system, to a new build system powered by GitLab CI.
+The first drafts were soon improved a lot by TNE, who I attribute a lot of things I learned during this journey to! Not only did they massively improve the first bash script efficiency, but they also wrote the scheduler backend powered by Typescript - which at first, was quite new to me. Little did I know, the new job turned out to provide me with the exact knowledge needed to also work on this part of the system.
+I was very happy to find out that this was in fact a win-win situation - being able to improve skills needed for work and improving open source tools at the same time. Nothing better than that! There is quite a big README that explains the whole thing in-depth in the currently in-testing Chaotic-AUR infra 4.0:</p>
+<ul>
+<li><a href="https://gitlab.com/chaotic-aur/pkgbuilds" target="_blank" rel="noreferrer">README</a></li>
+<li><a href="https://gitlab.com/garuda-linux/tools/chaotic-manager" target="_blank" rel="noreferrer">Chaotic Manager repo</a></li>
+<li><a href="https://github.com/chaotic-cx/chaotic-repository-template" target="_blank" rel="noreferrer">Chaotic Repository Template repo</a></li>
+</ul>
+<p>On another note, this has been powering the Garuda Linux repo&rsquo;s build infra since almost the beginning of the year, if I remember correctly. Which was much easier thanks to quite homogen package process requirements.</p>
+<h2 id="chaotic-aurs-new-website" class="relative group">Chaotic-AUR&rsquo;s new website <span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#chaotic-aurs-new-website" aria-label="Anchor">#</a></span></h2><p>As I entered the new job, I had to learn new frameworks and programming languages (Java-/Typescript especially).
+What can be better than choosing a fun and <em>useful</em> project to learn them? That&rsquo;s when I decided to apply new knowledge to rework the Chaotic-AUR website, which consisted of one page README until this day.
+Firstly, an API for fetching data from the new build system was implemented via NestJs.
+This consisted of currently running builds and further queued up packages in Redis.
+Next, a way of showing past deployments was the thing I wanted to implement.
+Since TNE insisted on not adding a database (all state in Git, or the temporary Redis cache storing queues and logs), I had a crazy idea of using the Telegram deploy log channel for this reason.
+Not only does this store deployments close to forever, but it is also accessible via API.
+So yeah, <a href="https://aur.chaotic.cx/status" target="_blank" rel="noreferrer">deploy logs</a> are basically now powered by Telegram as a database, the Telegram API as a database client, and some algorithms to extract the requested messages from the channel history.
+Whether this is wise - probably, and absolutely not. Does it work? Hell yes, it does. Given the requirements of not adding an additional database, it was a fun excercise of learning how to work with API&rsquo;s. And it made fetching the newest announcement channel news much more easy! &#x1f601;
+I think it turned out pretty nice considering I&rsquo;m not a frontend type of guy, and has useful features that didn&rsquo;t exist before :party:</p>
 
     </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        Giving some updates about what is currently on my mind, since the last post has been long time ago
-      </div>
-    
-  </div>
-</article>
-
-          
-            <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projects/garuda-ci/"
-          >Improving Garuda's repository set via CI/CD pipelines</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span>1375 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        This is another post dedicated to recent changes to some of our infrastructure - this time tackling the repository setups, particularly those containing PKGBUILDs or sources for our packages &#x1f527;
-      </div>
-    
-  </div>
-</article>
-
-          
-            <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projects/nix-infra/"
-          >Taking the infra's NixOS setup to the next level</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span>1440 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">7 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        This is a summary about the most recent major server maintenance we had at Garuda Linux / Chaotic-AUR &#x1f527;
-      </div>
-    
-  </div>
-</article>
-
-          
-            <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projects/ansible-infra/"
-          >Ansible roles for the infra!</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span>642 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        As our infrastructure is growing, the number of services and tasks is increasing as well. This can be tedious and time-consuming, especially when you have to deal with a lot of servers - enter Ansible! Ansible allows automating tasks on a wide range of platforms, including Linux, Windows, and Mac. &#x1f527;
-      </div>
-    
-  </div>
-</article>
-
-          
-            <article class="mt-6 flex max-w-prose flex-row">
-  <div>
-    <h3 class="flex items-center text-xl font-semibold">
-      
-        <a
-          class="text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/projects/garuda/"
-          >Garuda Linux</a
-        >
-      
-      
-      
-    </h3>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-
-  
-
-  
-    
-  
-
-  
-    
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <span>974 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
-    
-
-    
-    
-  </div>
-
-  
-  
-
-
-    </div>
-    
-      <div class="prose py-1 dark:prose-invert">
-        For about 2 years I have been using Linux. Since the beginning, I loved the way things work on Linux, the simplicity and customizability - something unheard of in among windows users. A long time of these two years I spent distro hopping, searching for the optimal Linux distribution for my requirements. &#x1f985;
-      </div>
-    
-  </div>
-</article>
-
-          
-        
-      </section>
-      
-
-    
   </section>
+  
+    <section class="prose mt-10 dark:prose-invert">
+      <p class="border-t py-8">
+        <em>There's no articles to list here yet.</em>
+      </p>
+    </section>
+  
 
       </main>
       
